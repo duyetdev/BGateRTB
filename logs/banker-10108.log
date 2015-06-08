@@ -1,0 +1,21 @@
+FD limit at: 65535
+ redisUri=localhost:6379
+2015-06-05 23:43:03.851 [1;32mMasterBanker [1;34msuccessfully loaded accounts[0m
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T16:43:03Z
+type:   ML::Exception
+pid:    10108; tid: 10108
+what:   couldn't bind to any port in range [9985,9986]
+stack:
+00: 0x0x7f62a0feeecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f62a0feeecb]
+01: 0x0x7f629f2f4472 at Datacratic::AcceptorT<Datacratic::SocketTransport>::listen(Datacratic::PortRange const&, std::string const&, Datacratic::PassiveEndpoint*, bool, int) + 0x1c2 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc0472/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic9AcceptorTINS_15SocketTransportEE6listenERKNS_9PortRangeERKSsPNS_15PassiveEndpointEbi+0x1c2) [0x7f629f2f4472]
+02: 0x0x7f629f33ddee at Datacratic::HttpNamedEndpoint::bindTcp(Datacratic::PortRange const&, std::string) + 0x8e in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x109dee/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic17HttpNamedEndpoint7bindTcpERKNS_9PortRangeESs+0x8e) [0x7f629f33ddee]
+03: 0x0x7f629f337812 at Datacratic::RestServiceEndpoint::bindTcp(Datacratic::PortRange const&, Datacratic::PortRange const&, std::string) + 0x52 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x103812/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic19RestServiceEndpoint7bindTcpERKNS_9PortRangeES3_Ss+0x52) [0x7f629f337812]
+04: 0x0x7f62a09197d4 at RTBKIT::MasterBanker::bindTcp() + 0xf4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbanker.so + 0x697d4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbanker.so(_ZN6RTBKIT12MasterBanker7bindTcpEv+0xf4) [0x7f62a09197d4]
+05: 0x0x414899 at main + 0xb19 in build/x86_64/bin/banker_service_runner + 0x14899build/x86_64/bin/banker_service_runner(main+0xb19) [0x414899]
+06: 0x0x7f629fa9076d at __libc_start_main + 0xed in /lib/x86_64-linux-gnu/libc.so.6 + 0x2176d/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed) [0x7f629fa9076d]
+07: 0x0x415051 in build/x86_64/bin/banker_service_runner + 0x15051build/x86_64/bin/banker_service_runner() [0x415051]
+
+terminate called after throwing an instance of 'ML::Exception'
+  what():  couldn't bind to any port in range [9985,9986]

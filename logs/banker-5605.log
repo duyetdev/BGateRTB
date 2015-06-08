@@ -1,0 +1,23 @@
+FD limit at: 65535
+ redisUri=localhost:6379
+2015-06-06 13:43:19.593 [1;32mMasterBanker [1;34msuccessfully loaded accounts[0m
+zookeeper error on zoo_create, path /rtb-test/serviceClass/rtbBanker/masterBanker: node exists
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-06T06:43:19Z
+type:   ML::Exception
+pid:    5605; tid: 5605
+what:   Zookeeper error on zoo_create, path /rtb-test/serviceClass/rtbBanker/masterBanker: node exists
+stack:
+00: 0x0x7fcb938a3ecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7fcb938a3ecb]
+01: 0x0x7fcb91c22e63 at Datacratic::ZookeeperConnection::checkRes(int, int&, char const*, char const*) + 0xe3 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x139e63/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic19ZookeeperConnection8checkResEiRiPKcS3_+0xe3) [0x7fcb91c22e63]
+02: 0x0x7fcb91c22a61 at Datacratic::ZookeeperConnection::createNode(std::string const&, std::string const&, bool, bool, bool, bool) + 0x441 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x139a61/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic19ZookeeperConnection10createNodeERKSsS2_bbbb+0x441) [0x7fcb91c22a61]
+03: 0x0x7fcb91bcfa85 at Datacratic::ZookeeperConfigurationService::setUnique(std::string const&, Json::Value const&) + 0x285 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xe6a85/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic29ZookeeperConfigurationService9setUniqueERKSsRKN4Json5ValueE+0x285) [0x7fcb91bcfa85]
+04: 0x0x7fcb91bba4d4 at Datacratic::ServiceBase::registerServiceProvider(std::string const&, std::vector<std::string, std::allocator<std::string> > const&) + 0x1c4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xd14d4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11ServiceBase23registerServiceProviderERKSsRKSt6vectorISsSaISsEE+0x1c4) [0x7fcb91bba4d4]
+05: 0x0x7fcb931e0182 at RTBKIT::MasterBanker::init(std::shared_ptr<RTBKIT::BankerPersistence> const&, double) + 0x262 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbanker.so + 0x7b182/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbanker.so(_ZN6RTBKIT12MasterBanker4initERKSt10shared_ptrINS_17BankerPersistenceEEd+0x262) [0x7fcb931e0182]
+06: 0x0x41473e at main + 0x9be in build/x86_64/bin/banker_service_runner + 0x1473ebuild/x86_64/bin/banker_service_runner(main+0x9be) [0x41473e]
+07: 0x0x7fcb9234576d at __libc_start_main + 0xed in /lib/x86_64-linux-gnu/libc.so.6 + 0x2176d/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed) [0x7fcb9234576d]
+08: 0x0x415051 in build/x86_64/bin/banker_service_runner + 0x15051build/x86_64/bin/banker_service_runner() [0x415051]
+
+terminate called after throwing an instance of 'ML::Exception'
+  what():  Zookeeper error on zoo_create, path /rtb-test/serviceClass/rtbBanker/masterBanker: node exists

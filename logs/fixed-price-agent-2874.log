@@ -1,0 +1,29 @@
+FD limit at: 65535
+2015-06-06 10:53:49.899 [1;32mZMQ [1;34mconnecting to masterBanker/zeromq[0m
+wexists handler returned -101
+2. returning result 
+2015-06-06 10:53:49.902 [1;32mSlaveBankerArguments [1;34musing zmq interface for the MasterBanker[0m
+2015-06-06 10:53:49.904 [1;32mZMQ [1;34mconnecting to masterBanker/zeromq[0m
+2015-06-06 10:53:49.906 [1;32mZMQ [1;34mconnecting to agentConfigurationService/agents[0m
+2015-06-06 10:53:49.908 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:22000[0m
+wexists handler returned -101
+2. returning result 
+2015-06-06 10:53:49.911 [1;32mZMQ Error [1;34mdropping message for agents[0m
+2015-06-06 10:53:49.958 [1;32mZMQ [1;34mconnecting to agentConfigurationService/agents[0m
+2015-06-06 10:53:49.961 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:15000[0m
+2015-06-06 10:53:49.983 [1;32mZMQ Trace [1;34mconnecting to PostAuctionLoop / PostAuctionLoop[0m
+2015-06-06 10:53:49.983 [1;32mZMQ [1;34mconnecting to PostAuctionLoop/agents[0m
+wexists handler returned -101
+2. returning result 
+2015-06-06 10:53:50.014 [1;32mZMQ Trace [1;34mconnecting to router / router[0m
+2015-06-06 10:53:50.015 [1;32mZMQ [1;34mconnecting to router/agents[0m
+wexists handler returned -101
+2. returning result 
+2015-06-06 10:53:50.045 [1;32mZMQ [1;34mconnecting to PostAuctionLoop/agents[0m
+2015-06-06 10:53:50.047 [1;32mZMQ [1;34mconnecting to PostAuctionLoop/agents[0m
+2015-06-06 10:53:50.051 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:21000[0m
+BiddingAgent is connected to post auction service PostAuctionLoop
+2015-06-06 10:53:50.066 [1;32mZMQ [1;34mconnecting to router/agents[0m
+2015-06-06 10:53:50.068 [1;32mZMQ [1;34mconnecting to router/agents[0m
+2015-06-06 10:53:50.070 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:17000[0m
+BiddingAgent is connected to router router

@@ -1,0 +1,802 @@
+FD limit too low: 10240/10240 smaller than recommended 65535
+FD limit raised to: 10240
+listening on hostname 0.0.0.0 port 12340
+listening on hostname 0.0.0.0 port 12341
+2015-06-05 14:07:04.485 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedEndpoint::socket[0m
+2015-06-05 14:07:04.514 [1;32mZMQ Trace [1;34mconnecting to PostAuctionLoop / PostAuctionLoop[0m
+2015-06-05 14:07:04.515 [1;32mZMQ [1;34mconnecting to PostAuctionLoop/events[0m
+wexists handler returned -101
+2. returning result 
+2015-06-05 14:07:04.557 [1;32mZMQ [1;34mconnecting to PostAuctionLoop/events[0m
+2015-06-05 14:07:04.559 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:20000[0m
+error token: c = v
+error token: c = e
+error token: c = r
+error token: c = b
+error token: c = u
+error token: c = n
+error token: c = d
+error token: c = l
+error token: c = e
+error token: c = p
+error token: c = u
+error token: c = b
+error token: c = l
+error token: c = i
+error token: c = s
+error token: c = h
+error token: c = e
+error token: c = r
+error token: c = i
+error token: c = d
+error token: c = a
+error token: c = g
+error token: c = l
+error token: c = t
+error token: c = b
+error token: c = B
+error token: c = Y
+error token: c = i
+error token: c = p
+error token: c = b
+error token: c = m
+error token: c = N
+error token: c = y
+error token: c = D
+error token: c = A
+error token: c = s
+error token: c = S
+error token: c = A
+error token: c = F
+error token: c = w
+error token: c = c
+error token: c = B
+error token: c = i
+error token: c = J
+error token: c = k
+error token: c = f
+error token: c = T
+error token: c = U
+error token: c = C
+error token: c = V
+error token: c = n
+error token: c = a
+error token: c = m
+error token: c = e
+error token: c = y
+error token: c = a
+error token: c = h
+error token: c = o
+error token: c = o
+error token: c = d
+error token: c = o
+error token: c = m
+error token: c = a
+error token: c = i
+error token: c = n
+error token: c = w
+error token: c = w
+error token: c = w
+error token: c = .
+error token: c = y
+error token: c = a
+error token: c = h
+error token: c = o
+error token: c = o
+error token: c = .
+error token: c = c
+error token: c = o
+error token: c = m
+error token: c = s
+error token: c = t
+error token: c = o
+error token: c = r
+error token: c = e
+error token: c = u
+error token: c = r
+error token: c = l
+error token: c = h
+error token: c = t
+error token: c = t
+error token: c = p
+error token: c = s
+error: parsing JSON payload: * Line 28, Column 10
+  Missing ',' or '}' in object declaration
+
+error token: c = v
+error token: c = e
+error token: c = r
+error token: c = b
+error token: c = u
+error token: c = n
+error token: c = d
+error token: c = l
+error token: c = e
+error token: c = p
+error token: c = u
+error token: c = b
+error token: c = l
+error token: c = i
+error token: c = s
+error token: c = h
+error token: c = e
+error token: c = r
+error token: c = i
+error token: c = d
+error token: c = a
+error token: c = g
+error token: c = l
+error token: c = t
+error token: c = b
+error token: c = B
+error token: c = Y
+error token: c = i
+error token: c = p
+error token: c = b
+error token: c = m
+error token: c = N
+error token: c = y
+error token: c = D
+error token: c = A
+error token: c = s
+error token: c = S
+error token: c = A
+error token: c = F
+error token: c = w
+error token: c = c
+error token: c = B
+error token: c = i
+error token: c = J
+error token: c = k
+error token: c = f
+error token: c = T
+error token: c = U
+error token: c = C
+error token: c = V
+error token: c = n
+error token: c = a
+error token: c = m
+error token: c = e
+error token: c = y
+error token: c = a
+error token: c = h
+error token: c = o
+error token: c = o
+error token: c = d
+error token: c = o
+error token: c = m
+error token: c = a
+error token: c = i
+error token: c = n
+error token: c = w
+error token: c = w
+error token: c = w
+error token: c = .
+error token: c = y
+error token: c = a
+error token: c = h
+error token: c = o
+error token: c = o
+error token: c = .
+error token: c = c
+error token: c = o
+error token: c = m
+error token: c = s
+error token: c = t
+error token: c = o
+error token: c = r
+error token: c = e
+error token: c = u
+error token: c = r
+error token: c = l
+error token: c = h
+error token: c = t
+error token: c = t
+error token: c = p
+error token: c = s
+error: parsing JSON payload: * Line 28, Column 10
+  Missing ',' or '}' in object declaration
+
+error token: c = v
+error token: c = e
+error token: c = r
+error token: c = b
+error token: c = u
+error token: c = n
+error token: c = d
+error token: c = l
+error token: c = e
+error token: c = p
+error token: c = u
+error token: c = b
+error token: c = l
+error token: c = i
+error token: c = s
+error token: c = h
+error token: c = e
+error token: c = r
+error token: c = i
+error token: c = d
+error token: c = a
+error token: c = g
+error token: c = l
+error token: c = t
+error token: c = b
+error token: c = B
+error token: c = Y
+error token: c = i
+error token: c = p
+error token: c = b
+error token: c = m
+error token: c = N
+error token: c = y
+error token: c = D
+error token: c = A
+error token: c = s
+error token: c = S
+error token: c = A
+error token: c = F
+error token: c = w
+error token: c = c
+error token: c = B
+error token: c = i
+error token: c = J
+error token: c = k
+error token: c = f
+error token: c = T
+error token: c = U
+error token: c = C
+error token: c = V
+error token: c = n
+error token: c = a
+error token: c = m
+error token: c = e
+error token: c = y
+error token: c = a
+error token: c = h
+error token: c = o
+error token: c = o
+error token: c = d
+error token: c = o
+error token: c = m
+error token: c = a
+error token: c = i
+error token: c = n
+error token: c = w
+error token: c = w
+error token: c = w
+error token: c = .
+error token: c = y
+error token: c = a
+error token: c = h
+error token: c = o
+error token: c = o
+error token: c = .
+error token: c = c
+error token: c = o
+error token: c = m
+error token: c = s
+error token: c = t
+error token: c = o
+error token: c = r
+error token: c = e
+error token: c = u
+error token: c = r
+error token: c = l
+error token: c = h
+error token: c = t
+error token: c = t
+error token: c = p
+error token: c = s
+error: parsing JSON payload: * Line 28, Column 10
+  Missing ',' or '}' in object declaration
+
+error token: c = v
+error token: c = e
+error token: c = r
+error token: c = b
+error token: c = u
+error token: c = n
+error token: c = d
+error token: c = l
+error token: c = e
+error token: c = p
+error token: c = u
+error token: c = b
+error token: c = l
+error token: c = i
+error token: c = s
+error token: c = h
+error token: c = e
+error token: c = r
+error token: c = i
+error token: c = d
+error token: c = a
+error token: c = g
+error token: c = l
+error token: c = t
+error token: c = b
+error token: c = B
+error token: c = Y
+error token: c = i
+error token: c = p
+error token: c = b
+error token: c = m
+error token: c = N
+error token: c = y
+error token: c = D
+error token: c = A
+error token: c = s
+error token: c = S
+error token: c = A
+error token: c = F
+error token: c = w
+error token: c = c
+error token: c = B
+error token: c = i
+error token: c = J
+error token: c = k
+error token: c = f
+error token: c = T
+error token: c = U
+error token: c = C
+error token: c = V
+error token: c = n
+error token: c = a
+error token: c = m
+error token: c = e
+error token: c = y
+error token: c = a
+error token: c = h
+error token: c = o
+error token: c = o
+error token: c = d
+error token: c = o
+error token: c = m
+error token: c = a
+error token: c = i
+error token: c = n
+error token: c = w
+error token: c = w
+error token: c = w
+error token: c = .
+error token: c = y
+error token: c = a
+error token: c = h
+error token: c = o
+error token: c = o
+error token: c = .
+error token: c = c
+error token: c = o
+error token: c = m
+error token: c = s
+error token: c = t
+error token: c = o
+error token: c = r
+error token: c = e
+error token: c = u
+error token: c = r
+error token: c = l
+error token: c = h
+error token: c = t
+error token: c = t
+error token: c = p
+error token: c = s
+error: parsing JSON payload: * Line 28, Column 10
+  Missing ',' or '}' in object declaration
+
+error token: c = v
+error token: c = e
+error token: c = r
+error token: c = b
+error token: c = u
+error token: c = n
+error token: c = d
+error token: c = l
+error token: c = e
+error token: c = p
+error token: c = u
+error token: c = b
+error token: c = l
+error token: c = i
+error token: c = s
+error token: c = h
+error token: c = e
+error token: c = r
+error token: c = i
+error token: c = d
+error token: c = a
+error token: c = g
+error token: c = l
+error token: c = t
+error token: c = b
+error token: c = B
+error token: c = Y
+error token: c = i
+error token: c = p
+error token: c = b
+error token: c = m
+error token: c = N
+error token: c = y
+error token: c = D
+error token: c = A
+error token: c = s
+error token: c = S
+error token: c = A
+error token: c = F
+error token: c = w
+error token: c = c
+error token: c = B
+error token: c = i
+error token: c = J
+error token: c = k
+error token: c = f
+error token: c = T
+error token: c = U
+error token: c = C
+error token: c = V
+error token: c = n
+error token: c = a
+error token: c = m
+error token: c = e
+error token: c = y
+error token: c = a
+error token: c = h
+error token: c = o
+error token: c = o
+error token: c = d
+error token: c = o
+error token: c = m
+error token: c = a
+error token: c = i
+error token: c = n
+error token: c = w
+error token: c = w
+error token: c = w
+error token: c = .
+error token: c = y
+error token: c = a
+error token: c = h
+error token: c = o
+error token: c = o
+error token: c = .
+error token: c = c
+error token: c = o
+error token: c = m
+error token: c = s
+error token: c = t
+error token: c = o
+error token: c = r
+error token: c = e
+error token: c = u
+error token: c = r
+error token: c = l
+error token: c = h
+error token: c = t
+error token: c = t
+error token: c = p
+error token: c = s
+error: parsing JSON payload: * Line 28, Column 10
+  Missing ',' or '}' in object declaration
+
+error token: c = v
+error token: c = e
+error token: c = r
+error token: c = b
+error token: c = u
+error token: c = n
+error token: c = d
+error token: c = l
+error token: c = e
+error token: c = p
+error token: c = u
+error token: c = b
+error token: c = l
+error token: c = i
+error token: c = s
+error token: c = h
+error token: c = e
+error token: c = r
+error token: c = i
+error token: c = d
+error token: c = a
+error token: c = g
+error token: c = l
+error token: c = t
+error token: c = b
+error token: c = B
+error token: c = Y
+error token: c = i
+error token: c = p
+error token: c = b
+error token: c = m
+error token: c = N
+error token: c = y
+error token: c = D
+error token: c = A
+error token: c = s
+error token: c = S
+error token: c = A
+error token: c = F
+error token: c = w
+error token: c = c
+error token: c = B
+error token: c = i
+error token: c = J
+error token: c = k
+error token: c = f
+error token: c = T
+error token: c = U
+error token: c = C
+error token: c = V
+error token: c = n
+error token: c = a
+error token: c = m
+error token: c = e
+error token: c = y
+error token: c = a
+error token: c = h
+error token: c = o
+error token: c = o
+error token: c = d
+error token: c = o
+error token: c = m
+error token: c = a
+error token: c = i
+error token: c = n
+error token: c = w
+error token: c = w
+error token: c = w
+error token: c = .
+error token: c = y
+error token: c = a
+error token: c = h
+error token: c = o
+error token: c = o
+error token: c = .
+error token: c = c
+error token: c = o
+error token: c = m
+error token: c = s
+error token: c = t
+error token: c = o
+error token: c = r
+error token: c = e
+error token: c = u
+error token: c = r
+error token: c = l
+error token: c = h
+error token: c = t
+error token: c = t
+error token: c = p
+error token: c = s
+error: parsing JSON payload: * Line 28, Column 10
+  Missing ',' or '}' in object declaration
+
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T08:13:40Z
+type:   ML::Exception
+pid:    1875; tid: 1944
+what:   invalid verb
+stack:
+00: 0x0x7f8299b1aecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f8299b1aecb]
+01: 0x0x7f8298ef1e75 at Datacratic::JsonConnectionHandler::handleHttpHeader(Datacratic::HttpHeader const&) + 0xb5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb6e75/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler16handleHttpHeaderERKNS_10HttpHeaderE+0xb5) [0x7f8298ef1e75]
+02: 0x0x7f8298eec992 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0xd2 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1992/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0xd2) [0x7f8298eec992]
+03: 0x0x7f8298eebb8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f8298eebb8d]
+04: 0x0x7f8298edbd76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f8298edbd76]
+05: 0x0x7f8298ed8bb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f8298ed8bb7]
+06: 0x0x7f8298edeec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f8298edeec4]
+07: 0x0x7f8298edf104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f8298edf104]
+08: 0x0x7f8298effaf3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f8298effaf3]
+09: 0x0x7f8298edfb0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f8298edfb0d]
+10: 0x0x7f829688e2aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f829688e2aa]
+11: 0x0x7f8299d24e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f8299d24e9a]
+12: 0x0x7f829835e38d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f829835e38d]
+
+error: handler input had exception invalid verb
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T08:13:40Z
+type:   ML::Exception
+pid:    1875; tid: 1945
+what:   invalid verb
+stack:
+00: 0x0x7f8299b1aecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f8299b1aecb]
+01: 0x0x7f8298ef1e75 at Datacratic::JsonConnectionHandler::handleHttpHeader(Datacratic::HttpHeader const&) + 0xb5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb6e75/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler16handleHttpHeaderERKNS_10HttpHeaderE+0xb5) [0x7f8298ef1e75]
+02: 0x0x7f8298eec992 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0xd2 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1992/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0xd2) [0x7f8298eec992]
+03: 0x0x7f8298eebb8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f8298eebb8d]
+04: 0x0x7f8298edbd76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f8298edbd76]
+05: 0x0x7f8298ed8bb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f8298ed8bb7]
+06: 0x0x7f8298edeec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f8298edeec4]
+07: 0x0x7f8298edf104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f8298edf104]
+08: 0x0x7f8298effaf3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f8298effaf3]
+09: 0x0x7f8298edfb0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f8298edfb0d]
+10: 0x0x7f829688e2aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f829688e2aa]
+11: 0x0x7f8299d24e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f8299d24e9a]
+12: 0x0x7f829835e38d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f829835e38d]
+
+error: handler input had exception invalid verb
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T08:13:40Z
+type:   ML::Exception
+pid:    1875; tid: 1945
+what:   invalid verb
+stack:
+00: 0x0x7f8299b1aecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f8299b1aecb]
+01: 0x0x7f8298ef1e75 at Datacratic::JsonConnectionHandler::handleHttpHeader(Datacratic::HttpHeader const&) + 0xb5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb6e75/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler16handleHttpHeaderERKNS_10HttpHeaderE+0xb5) [0x7f8298ef1e75]
+02: 0x0x7f8298eec992 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0xd2 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1992/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0xd2) [0x7f8298eec992]
+03: 0x0x7f8298eebb8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f8298eebb8d]
+04: 0x0x7f8298edbd76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f8298edbd76]
+05: 0x0x7f8298ed8bb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f8298ed8bb7]
+06: 0x0x7f8298edeec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f8298edeec4]
+07: 0x0x7f8298edf104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f8298edf104]
+08: 0x0x7f8298effaf3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f8298effaf3]
+09: 0x0x7f8298edfb0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f8298edfb0d]
+10: 0x0x7f829688e2aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f829688e2aa]
+11: 0x0x7f8299d24e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f8299d24e9a]
+12: 0x0x7f829835e38d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f829835e38d]
+
+error: handler input had exception invalid verb
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T08:15:09Z
+type:   ML::Exception
+pid:    1875; tid: 1944
+what:   invalid verb
+stack:
+00: 0x0x7f8299b1aecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f8299b1aecb]
+01: 0x0x7f8298ef1e75 at Datacratic::JsonConnectionHandler::handleHttpHeader(Datacratic::HttpHeader const&) + 0xb5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb6e75/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler16handleHttpHeaderERKNS_10HttpHeaderE+0xb5) [0x7f8298ef1e75]
+02: 0x0x7f8298eec992 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0xd2 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1992/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0xd2) [0x7f8298eec992]
+03: 0x0x7f8298eebb8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f8298eebb8d]
+04: 0x0x7f8298edbd76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f8298edbd76]
+05: 0x0x7f8298ed8bb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f8298ed8bb7]
+06: 0x0x7f8298edeec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f8298edeec4]
+07: 0x0x7f8298edf104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f8298edf104]
+08: 0x0x7f8298effaf3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f8298effaf3]
+09: 0x0x7f8298edfb0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f8298edfb0d]
+10: 0x0x7f829688e2aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f829688e2aa]
+11: 0x0x7f8299d24e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f8299d24e9a]
+12: 0x0x7f829835e38d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f829835e38d]
+
+error: handler input had exception invalid verb
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T08:15:19Z
+type:   ML::Exception
+pid:    1875; tid: 1944
+what:   invalid verb
+stack:
+00: 0x0x7f8299b1aecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f8299b1aecb]
+01: 0x0x7f8298ef1e75 at Datacratic::JsonConnectionHandler::handleHttpHeader(Datacratic::HttpHeader const&) + 0xb5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb6e75/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler16handleHttpHeaderERKNS_10HttpHeaderE+0xb5) [0x7f8298ef1e75]
+02: 0x0x7f8298eec992 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0xd2 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1992/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0xd2) [0x7f8298eec992]
+03: 0x0x7f8298eebb8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f8298eebb8d]
+04: 0x0x7f8298edbd76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f8298edbd76]
+05: 0x0x7f8298ed8bb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f8298ed8bb7]
+06: 0x0x7f8298edeec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f8298edeec4]
+07: 0x0x7f8298edf104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f8298edf104]
+08: 0x0x7f8298effaf3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f8298effaf3]
+09: 0x0x7f8298edfb0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f8298edfb0d]
+10: 0x0x7f829688e2aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f829688e2aa]
+11: 0x0x7f8299d24e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f8299d24e9a]
+12: 0x0x7f829835e38d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f829835e38d]
+
+error: handler input had exception invalid verb
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T08:37:55Z
+type:   ML::Exception
+pid:    1875; tid: 1944
+what:   unknown location field accountId
+stack:
+00: 0x0x7f8299b1aecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f8299b1aecb]
+01: 0x0x7f8297b26e1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f8297b26e1c]
+02: 0x0x7f828a4bf857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f828a4bf857]
+03: 0x0x7f828a4bf8c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f828a4bf8c7]
+04: 0x0x7f8299498be6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f8299498be6]
+05: 0x0x7f8298ef3d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f8298ef3d52]
+06: 0x0x7f8298eed2cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f8298eed2cb]
+07: 0x0x7f8298eec9c9 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x109 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb19c9/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x109) [0x7f8298eec9c9]
+08: 0x0x7f8298eebb8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f8298eebb8d]
+09: 0x0x7f8298edbd76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f8298edbd76]
+10: 0x0x7f8298ed8bb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f8298ed8bb7]
+11: 0x0x7f8298edeec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f8298edeec4]
+12: 0x0x7f8298edf104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f8298edf104]
+13: 0x0x7f8298effaf3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f8298effaf3]
+14: 0x0x7f8298edfb0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f8298edfb0d]
+15: 0x0x7f829688e2aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f829688e2aa]
+16: 0x0x7f8299d24e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f8299d24e9a]
+17: 0x0x7f829835e38d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f829835e38d]
+
+error parsing adserver request 
+{
+	"accountId" : "5",
+	"adSpotId" : "604356",
+	"auctionId" : "4BZkWjMDeAWZ",
+	"bidTimestamp" : 1365517882.674244,
+	"dataCost" : 0.0,
+	"timestamp" : 1365517883.974289,
+	"userIds" : [ "27978154­a122­11e2­74b7­6cea00000002" ],
+	"winMeta" : {},
+	"winPrice" : 0.8493150684931507
+}
+: unknown location field accountId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T08:38:18Z
+type:   ML::Exception
+pid:    1875; tid: 1950
+what:   unknown location field accountId
+stack:
+00: 0x0x7f8299b1aecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f8299b1aecb]
+01: 0x0x7f8297b26e1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f8297b26e1c]
+02: 0x0x7f828a4bf857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f828a4bf857]
+03: 0x0x7f828a4bf8c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f828a4bf8c7]
+04: 0x0x7f8299498be6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f8299498be6]
+05: 0x0x7f8298ef3d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f8298ef3d52]
+06: 0x0x7f8298eed2cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f8298eed2cb]
+07: 0x0x7f8298eec9c9 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x109 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb19c9/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x109) [0x7f8298eec9c9]
+08: 0x0x7f8298eebb8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f8298eebb8d]
+09: 0x0x7f8298edbd76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f8298edbd76]
+10: 0x0x7f8298ed8bb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f8298ed8bb7]
+11: 0x0x7f8298edeec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f8298edeec4]
+12: 0x0x7f8298edf104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f8298edf104]
+13: 0x0x7f8298effaf3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f8298effaf3]
+14: 0x0x7f8298edfb0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f8298edfb0d]
+15: 0x0x7f829688e2aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f829688e2aa]
+16: 0x0x7f8299d24e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f8299d24e9a]
+17: 0x0x7f829835e38d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f829835e38d]
+
+error parsing adserver request 
+{
+	"accountId" : "5",
+	"adSpotId" : "604356",
+	"auctionId" : "4BZkWjMDeAWZ",
+	"bidTimestamp" : 1365517882.674244,
+	"dataCost" : 0.0,
+	"timestamp" : 1365517883.974289,
+	"userIds" : [ "27978154­a122­11e2­74b7­6cea00000002" ],
+	"winMeta" : {},
+	"winPrice" : 0.8493150684931507
+}
+: unknown location field accountId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T08:38:23Z
+type:   ML::Exception
+pid:    1875; tid: 1945
+what:   unknown location field accountId
+stack:
+00: 0x0x7f8299b1aecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f8299b1aecb]
+01: 0x0x7f8297b26e1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f8297b26e1c]
+02: 0x0x7f828a4bf857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f828a4bf857]
+03: 0x0x7f828a4bf8c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f828a4bf8c7]
+04: 0x0x7f8299498be6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f8299498be6]
+05: 0x0x7f8298ef3d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f8298ef3d52]
+06: 0x0x7f8298eed2cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f8298eed2cb]
+07: 0x0x7f8298eec9c9 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x109 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb19c9/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x109) [0x7f8298eec9c9]
+08: 0x0x7f8298eebb8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f8298eebb8d]
+09: 0x0x7f8298edbd76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f8298edbd76]
+10: 0x0x7f8298ed8bb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f8298ed8bb7]
+11: 0x0x7f8298edeec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f8298edeec4]
+12: 0x0x7f8298edf104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f8298edf104]
+13: 0x0x7f8298effaf3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f8298effaf3]
+14: 0x0x7f8298edfb0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f8298edfb0d]
+15: 0x0x7f829688e2aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f829688e2aa]
+16: 0x0x7f8299d24e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f8299d24e9a]
+17: 0x0x7f829835e38d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f829835e38d]
+
+error parsing adserver request 
+{
+	"accountId" : "5",
+	"adSpotId" : "604356",
+	"auctionId" : "4BZkWjMDeAWZ",
+	"bidTimestamp" : 1365517882.674244,
+	"dataCost" : 0.0,
+	"timestamp" : 1365517883.974289,
+	"userIds" : [ "27978154­a122­11e2­74b7­6cea00000002" ],
+	"winMeta" : {},
+	"winPrice" : 0.8493150684931507
+}
+: unknown location field accountId

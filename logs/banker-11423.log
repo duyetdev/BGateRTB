@@ -1,0 +1,49 @@
+FD limit at: 65535
+2015-06-06 10:11:17,338:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:17,672:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:18,005:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:18,339:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:18,672:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:19,006:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:19,339:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:19,673:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:20,006:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:20,340:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:20,673:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:21,007:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:21,340:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:21,674:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:22,007:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+ZookeeperConnection:connect: waiting 9.848 seconds 
+2015-06-06 10:11:32,197:11423(0x7f8229e94700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:32,531:11423(0x7f8229e94700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:32,864:11423(0x7f8229e94700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:33,198:11423(0x7f8229e94700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:33,531:11423(0x7f8229e94700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:33,865:11423(0x7f8229e94700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:34,198:11423(0x7f8229e94700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:34,532:11423(0x7f8229e94700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:34,865:11423(0x7f8229e94700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:35,199:11423(0x7f8229e94700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:35,532:11423(0x7f8229e94700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:35,866:11423(0x7f8229e94700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:36,199:11423(0x7f8229e94700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:36,533:11423(0x7f8229e94700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:36,867:11423(0x7f8229e94700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+ZookeeperConnection:connect: waiting 17.225 seconds 
+2015-06-06 10:11:54,433:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:54,766:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:55,100:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:55,433:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:55,767:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:56,100:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:56,434:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:56,768:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:57,102:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:57,435:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:57,769:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:58,102:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:58,436:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:58,770:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-06 10:11:59,104:11423(0x7f822a695700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+ZookeeperConnection:connect: waiting 29.027 seconds 

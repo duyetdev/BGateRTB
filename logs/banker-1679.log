@@ -1,0 +1,686 @@
+FD limit too low: 10240/10240 smaller than recommended 65535
+FD limit raised to: 10240
+ redisUri=localhost:6379
+2015-06-05 13:52:08.866 [1;32mMasterBanker [1;34msuccessfully loaded accounts[0m
+bound tcp for http port 9985
+master banker is listening on tcp://*:22000,http://0.0.0.0:9985
+2015-06-05 13:52:08.890 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedEndpoint::socket[0m
+serviceClass/rtbAgentConfiguration/agentConfigurationService --> {"serviceLocation":"mtl","serviceName":"agentConfigurationService","servicePath":"agentConfigurationService"}
+serviceClass/monitor/monitor --> {"serviceLocation":"mtl","serviceName":"monitor","servicePath":"monitor"}
+serviceClass/rtbRequestRouter/router --> {"serviceLocation":"mtl","serviceName":"router","servicePath":"router"}
+serviceClass/adServer/adserver --> {"serviceLocation":"mtl","serviceName":"adserver","servicePath":"adserver"}
+serviceClass/rtbBanker/masterBanker --> {"serviceLocation":"mtl","serviceName":"masterBanker","servicePath":"masterBanker"}
+serviceClass/rtbRouterAugmentation/router.augmentationLoop --> {"serviceLocation":"mtl","serviceName":"router.augmentationLoop","servicePath":"router.augmentationLoop"}
+serviceClass/rtbPostAuctionService/PostAuctionLoop --> {"serviceLocation":"mtl","serviceName":"PostAuctionLoop","servicePath":"PostAuctionLoop","shardIndex":0}
+monitor/http/tcp --> [{"httpUri":"http://127.0.0.1:9987","transports":[{"addr":"127.0.0.1","hostScope":"ubuntu-virtual-machine","name":"tcp","port":9987},{"name":"http","uri":"http://127.0.0.1:9987"}]},{"httpUri":"http://192.168.26.23:9987","transports":[{"addr":"192.168.26.23","hostScope":"*","name":"tcp","port":9987},{"name":"http","uri":"http://192.168.26.23:9987"}]}]
+monitor/zeromq/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ubuntu-virtual-machine","name":"tcp","port":24000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:24000"}],"zmqConnectUri":"tcp://127.0.0.1:24000"},{"transports":[{"addr":"192.168.26.23","hostScope":"*","name":"tcp","port":24000},{"name":"zeromq","socketType":6,"uri":"tcp://ubuntu-virtual-machine:24000"}],"zmqConnectUri":"tcp://ubuntu-virtual-machine:24000"}]
+masterBanker/http/tcp --> [{"httpUri":"http://127.0.0.1:9985","transports":[{"addr":"127.0.0.1","hostScope":"ubuntu-virtual-machine","name":"tcp","port":9985},{"name":"http","uri":"http://127.0.0.1:9985"}]},{"httpUri":"http://192.168.26.23:9985","transports":[{"addr":"192.168.26.23","hostScope":"*","name":"tcp","port":9985},{"name":"http","uri":"http://192.168.26.23:9985"}]}]
+masterBanker/zeromq/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ubuntu-virtual-machine","name":"tcp","port":22000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:22000"}],"zmqConnectUri":"tcp://127.0.0.1:22000"},{"transports":[{"addr":"192.168.26.23","hostScope":"*","name":"tcp","port":22000},{"name":"zeromq","socketType":6,"uri":"tcp://ubuntu-virtual-machine:22000"}],"zmqConnectUri":"tcp://ubuntu-virtual-machine:22000"}]
+agentConfigurationService/rest/http/tcp --> [{"httpUri":"http://127.0.0.1:9986","transports":[{"addr":"127.0.0.1","hostScope":"ubuntu-virtual-machine","name":"tcp","port":9986},{"name":"http","uri":"http://127.0.0.1:9986"}]},{"httpUri":"http://192.168.26.23:9986","transports":[{"addr":"192.168.26.23","hostScope":"*","name":"tcp","port":9986},{"name":"http","uri":"http://192.168.26.23:9986"}]}]
+agentConfigurationService/rest/zeromq/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ubuntu-virtual-machine","name":"tcp","port":23000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:23000"}],"zmqConnectUri":"tcp://127.0.0.1:23000"},{"transports":[{"addr":"192.168.26.23","hostScope":"*","name":"tcp","port":23000},{"name":"zeromq","socketType":6,"uri":"tcp://ubuntu-virtual-machine:23000"}],"zmqConnectUri":"tcp://ubuntu-virtual-machine:23000"}]
+agentConfigurationService/listen/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ubuntu-virtual-machine","name":"tcp","port":19000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:19000"}],"zmqConnectUri":"tcp://127.0.0.1:19000"},{"transports":[{"addr":"192.168.26.23","hostScope":"*","name":"tcp","port":19000},{"name":"zeromq","socketType":6,"uri":"tcp://ubuntu-virtual-machine:19000"}],"zmqConnectUri":"tcp://ubuntu-virtual-machine:19000"}]
+agentConfigurationService/agents/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ubuntu-virtual-machine","name":"tcp","port":15000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:15000"}],"zmqConnectUri":"tcp://127.0.0.1:15000"},{"transports":[{"addr":"192.168.26.23","hostScope":"*","name":"tcp","port":15000},{"name":"zeromq","socketType":6,"uri":"tcp://ubuntu-virtual-machine:15000"}],"zmqConnectUri":"tcp://ubuntu-virtual-machine:15000"}]
+adserver/logger/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ubuntu-virtual-machine","name":"tcp","port":25000},{"name":"zeromq","socketType":9,"uri":"tcp://127.0.0.1:25000"}],"zmqConnectUri":"tcp://127.0.0.1:25000"},{"transports":[{"addr":"192.168.26.23","hostScope":"*","name":"tcp","port":25000},{"name":"zeromq","socketType":9,"uri":"tcp://ubuntu-virtual-machine:25000"}],"zmqConnectUri":"tcp://ubuntu-virtual-machine:25000"}]
+2015-06-05 13:52:18.871 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:52:18.871 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:52:28.871 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:52:28.871 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:52:38.870 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:52:38.870 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:52:48.870 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:52:48.870 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:52:58.867 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:52:58.867 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:53:08.867 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:53:08.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:53:18.871 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:53:18.871 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:53:28.870 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:53:28.871 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:53:38.866 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:53:38.867 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:53:48.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:53:48.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:53:58.871 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:53:58.871 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+sent error response 404 "unknown resource GET /favicon.ico"
+
+2015-06-05 13:54:08.870 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:54:08.870 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:54:18.869 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:54:18.869 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:54:28.871 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:54:28.872 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:54:38.869 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:54:38.869 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:54:48.867 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:54:48.867 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:54:58.869 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:54:58.869 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+c = } delim = '
+str was { "USD/1M": 123456789 }
+error token: c = '
+token.type_ = 13
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:55:00Z
+type:   Json::Exception
+pid:    1679; tid: 1781
+what:   JSON Parsing error: [* Line 1, Column 1
+  Syntax error: value, object or array expected.
+]
+stack:
+00: 0x0x7f41556a6ecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f41556a6ecb]
+01: 0x0x7f41532a9cdb at Json::parse(std::string const&) + 0x9eb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libjsoncpp.so + 0x12cdb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libjsoncpp.so(_ZN4Json5parseERKSs+0x9eb) [0x7f41532a9cdb]
+02: 0x0x7f4154fcd901 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbanker.so + 0x65901/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbanker.so(+0x65901) [0x7f4154fcd901]
+03: 0x0x7f4154fd4ff3 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbanker.so + 0x6cff3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbanker.so(+0x6cff3) [0x7f4154fd4ff3]
+04: 0x0x7f4153a0598a at Datacratic::RestRequestRouter::processRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&) const + 0x5a in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x11998a/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter14processRequestERKNS_19RestServiceEndpoint12ConnectionIdERKNS_11RestRequestERNS_25RestRequestParsingContextE+0x5a) [0x7f4153a0598a]
+05: 0x0x7f4153a058d8 at Datacratic::RestRequestRouter::Route::process(Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&, Datacratic::RestServiceEndpoint::ConnectionId const&) const + 0x228 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1198d8/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter5Route7processERKNS_11RestRequestERNS_25RestRequestParsingContextERKNS_19RestServiceEndpoint12ConnectionIdE+0x228) [0x7f4153a058d8]
+06: 0x0x7f4153a059d1 at Datacratic::RestRequestRouter::processRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&) const + 0xa1 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1199d1/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter14processRequestERKNS_19RestServiceEndpoint12ConnectionIdERKNS_11RestRequestERNS_25RestRequestParsingContextE+0xa1) [0x7f4153a059d1]
+07: 0x0x7f4153a058d8 at Datacratic::RestRequestRouter::Route::process(Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&, Datacratic::RestServiceEndpoint::ConnectionId const&) const + 0x228 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1198d8/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter5Route7processERKNS_11RestRequestERNS_25RestRequestParsingContextERKNS_19RestServiceEndpoint12ConnectionIdE+0x228) [0x7f4153a058d8]
+08: 0x0x7f4153a059d1 at Datacratic::RestRequestRouter::processRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&) const + 0xa1 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1199d1/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter14processRequestERKNS_19RestServiceEndpoint12ConnectionIdERKNS_11RestRequestERNS_25RestRequestParsingContextE+0xa1) [0x7f4153a059d1]
+09: 0x0x7f4153a058d8 at Datacratic::RestRequestRouter::Route::process(Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&, Datacratic::RestServiceEndpoint::ConnectionId const&) const + 0x228 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1198d8/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter5Route7processERKNS_11RestRequestERNS_25RestRequestParsingContextERKNS_19RestServiceEndpoint12ConnectionIdE+0x228) [0x7f4153a058d8]
+10: 0x0x7f4153a059d1 at Datacratic::RestRequestRouter::processRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&) const + 0xa1 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1199d1/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter14processRequestERKNS_19RestServiceEndpoint12ConnectionIdERKNS_11RestRequestERNS_25RestRequestParsingContextE+0xa1) [0x7f4153a059d1]
+11: 0x0x7f4153a058d8 at Datacratic::RestRequestRouter::Route::process(Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&, Datacratic::RestServiceEndpoint::ConnectionId const&) const + 0x228 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1198d8/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter5Route7processERKNS_11RestRequestERNS_25RestRequestParsingContextERKNS_19RestServiceEndpoint12ConnectionIdE+0x228) [0x7f4153a058d8]
+12: 0x0x7f4153a059d1 at Datacratic::RestRequestRouter::processRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&) const + 0xa1 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1199d1/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter14processRequestERKNS_19RestServiceEndpoint12ConnectionIdERKNS_11RestRequestERNS_25RestRequestParsingContextE+0xa1) [0x7f4153a059d1]
+13: 0x0x7f4153a022ff at Datacratic::RestRequestRouter::handleRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&) const + 0x8f in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1162ff/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter13handleRequestERKNS_19RestServiceEndpoint12ConnectionIdERKNS_11RestRequestE+0x8f) [0x7f4153a022ff]
+14: 0x0x7f41539f419c at std::function<void (Datacratic::RestServiceEndpoint::ConnectionId, Datacratic::RestRequest)>::operator()(Datacratic::RestServiceEndpoint::ConnectionId, Datacratic::RestRequest) const + 0x1cc in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x10819c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNKSt8functionIFvN10Datacratic19RestServiceEndpoint12ConnectionIdENS0_11RestRequestEEEclES2_S3_+0x1cc) [0x7f41539f419c]
+15: 0x0x7f41539f2ac8 at Datacratic::RestServiceEndpoint::handleRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&) const + 0x1d8 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x106ac8/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic19RestServiceEndpoint13handleRequestERKNS0_12ConnectionIdERKNS_11RestRequestE+0x1d8) [0x7f41539f2ac8]
+16: 0x0x7f41539f300d in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x10700d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(+0x10700d) [0x7f41539f300d]
+17: 0x0x7f41539f77ed at Datacratic::HttpNamedEndpoint::RestConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0xfd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x10b7ed/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic17HttpNamedEndpoint21RestConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0xfd) [0x7f41539f77ed]
+18: 0x0x7f415399e2cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f415399e2cb]
+19: 0x0x7f415399d9c9 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x109 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb19c9/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x109) [0x7f415399d9c9]
+20: 0x0x7f415399cb8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f415399cb8d]
+21: 0x0x7f415398cd76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f415398cd76]
+22: 0x0x7f4153989bb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f4153989bb7]
+23: 0x0x7f415398fec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f415398fec4]
+24: 0x0x7f4153990104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f4153990104]
+25: 0x0x7f41539b0af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f41539b0af3]
+26: 0x0x7f41539b0bfd at Datacratic::Epoller::processOne() + 0x4d in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4bfd/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller10processOneEv+0x4d) [0x7f41539b0bfd]
+27: 0x0x7f41539c593c at Datacratic::MessageLoop::processOne() + 0x13c in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xd993c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop10processOneEv+0x13c) [0x7f41539c593c]
+28: 0x0x7f41539c5d31 at Datacratic::MessageLoop::runWorkerThread() + 0xd1 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xd9d31/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop15runWorkerThreadEv+0xd1) [0x7f41539c5d31]
+29: 0x0x7f41539c6685 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xda685/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(+0xda685) [0x7f41539c6685]
+30: 0x0x7f4154a63c78 in /usr/lib/x86_64-linux-gnu/libstdc++.so.6 + 0x6cc78/usr/lib/x86_64-linux-gnu/libstdc++.so.6(+0x6cc78) [0x7f4154a63c78]
+31: 0x0x7f41558b0e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f41558b0e9a]
+32: 0x0x7f415421a38d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f415421a38d]
+
+sent error response 400 "JSON Parsing error: [* Line 1, Column 1\n  Syntax error: value, object or array expected.\n]"
+
+2015-06-05 13:55:08.872 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- redisPhase2TimeMs: 0
+- totalTimeMs: 1
+[0m
+2015-06-05 13:55:08.872 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- redisPhase2TimeMs: 0
+- totalTimeMs: 1
+[0m
+2015-06-05 13:55:18.871 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- redisPhase2TimeMs: 0
+- totalTimeMs: 1
+[0m
+2015-06-05 13:55:18.872 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- redisPhase2TimeMs: 0
+- totalTimeMs: 1
+[0m
+2015-06-05 13:55:28.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- redisPhase2TimeMs: 0
+- totalTimeMs: 1
+[0m
+2015-06-05 13:55:28.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- redisPhase2TimeMs: 0
+- totalTimeMs: 1
+[0m
+2015-06-05 13:55:38.867 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:55:38.867 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:55:48.867 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:55:48.867 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:55:58.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:55:58.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:56:08.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:56:08.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:56:18.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:56:18.869 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:56:28.867 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:56:28.867 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:56:38.869 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:56:38.869 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:56:48.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:56:48.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:56:58.869 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:56:58.869 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:57:08.867 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:57:08.867 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:57:18.870 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:57:18.870 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:57:28.869 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:57:28.869 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:57:38.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:57:38.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:57:48.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:57:48.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:57:58.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:57:58.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:58:08.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:58:08.868 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:58:18.870 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:58:18.870 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:58:20Z
+type:   ML::Exception
+pid:    1679; tid: 1781
+what:   unknown currency code USD
+stack:
+00: 0x0x7f41556a6ecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f41556a6ecb]
+01: 0x0x7f414c0ea525 at RTBKIT::Amount::parseCurrency(std::string const&) + 0xe5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/../bin/libbid_request.so + 0xe7525/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/../bin/libbid_request.so(_ZN6RTBKIT6Amount13parseCurrencyERKSs+0xe5) [0x7f414c0ea525]
+02: 0x0x7f414c0ebda3 at RTBKIT::CurrencyPool::fromJson(Json::Value const&) + 0x103 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/../bin/libbid_request.so + 0xe8da3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/../bin/libbid_request.so(_ZN6RTBKIT12CurrencyPool8fromJsonERKN4Json5ValueE+0x103) [0x7f414c0ebda3]
+03: 0x0x7f4154fcd927 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbanker.so + 0x65927/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbanker.so(+0x65927) [0x7f4154fcd927]
+04: 0x0x7f4154fd4ff3 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbanker.so + 0x6cff3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbanker.so(+0x6cff3) [0x7f4154fd4ff3]
+05: 0x0x7f4153a0598a at Datacratic::RestRequestRouter::processRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&) const + 0x5a in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x11998a/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter14processRequestERKNS_19RestServiceEndpoint12ConnectionIdERKNS_11RestRequestERNS_25RestRequestParsingContextE+0x5a) [0x7f4153a0598a]
+06: 0x0x7f4153a058d8 at Datacratic::RestRequestRouter::Route::process(Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&, Datacratic::RestServiceEndpoint::ConnectionId const&) const + 0x228 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1198d8/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter5Route7processERKNS_11RestRequestERNS_25RestRequestParsingContextERKNS_19RestServiceEndpoint12ConnectionIdE+0x228) [0x7f4153a058d8]
+07: 0x0x7f4153a059d1 at Datacratic::RestRequestRouter::processRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&) const + 0xa1 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1199d1/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter14processRequestERKNS_19RestServiceEndpoint12ConnectionIdERKNS_11RestRequestERNS_25RestRequestParsingContextE+0xa1) [0x7f4153a059d1]
+08: 0x0x7f4153a058d8 at Datacratic::RestRequestRouter::Route::process(Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&, Datacratic::RestServiceEndpoint::ConnectionId const&) const + 0x228 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1198d8/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter5Route7processERKNS_11RestRequestERNS_25RestRequestParsingContextERKNS_19RestServiceEndpoint12ConnectionIdE+0x228) [0x7f4153a058d8]
+09: 0x0x7f4153a059d1 at Datacratic::RestRequestRouter::processRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&) const + 0xa1 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1199d1/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter14processRequestERKNS_19RestServiceEndpoint12ConnectionIdERKNS_11RestRequestERNS_25RestRequestParsingContextE+0xa1) [0x7f4153a059d1]
+10: 0x0x7f4153a058d8 at Datacratic::RestRequestRouter::Route::process(Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&, Datacratic::RestServiceEndpoint::ConnectionId const&) const + 0x228 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1198d8/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter5Route7processERKNS_11RestRequestERNS_25RestRequestParsingContextERKNS_19RestServiceEndpoint12ConnectionIdE+0x228) [0x7f4153a058d8]
+11: 0x0x7f4153a059d1 at Datacratic::RestRequestRouter::processRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&) const + 0xa1 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1199d1/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter14processRequestERKNS_19RestServiceEndpoint12ConnectionIdERKNS_11RestRequestERNS_25RestRequestParsingContextE+0xa1) [0x7f4153a059d1]
+12: 0x0x7f4153a058d8 at Datacratic::RestRequestRouter::Route::process(Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&, Datacratic::RestServiceEndpoint::ConnectionId const&) const + 0x228 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1198d8/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter5Route7processERKNS_11RestRequestERNS_25RestRequestParsingContextERKNS_19RestServiceEndpoint12ConnectionIdE+0x228) [0x7f4153a058d8]
+13: 0x0x7f4153a059d1 at Datacratic::RestRequestRouter::processRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&) const + 0xa1 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1199d1/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter14processRequestERKNS_19RestServiceEndpoint12ConnectionIdERKNS_11RestRequestERNS_25RestRequestParsingContextE+0xa1) [0x7f4153a059d1]
+14: 0x0x7f4153a022ff at Datacratic::RestRequestRouter::handleRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&) const + 0x8f in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1162ff/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter13handleRequestERKNS_19RestServiceEndpoint12ConnectionIdERKNS_11RestRequestE+0x8f) [0x7f4153a022ff]
+15: 0x0x7f41539f419c at std::function<void (Datacratic::RestServiceEndpoint::ConnectionId, Datacratic::RestRequest)>::operator()(Datacratic::RestServiceEndpoint::ConnectionId, Datacratic::RestRequest) const + 0x1cc in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x10819c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNKSt8functionIFvN10Datacratic19RestServiceEndpoint12ConnectionIdENS0_11RestRequestEEEclES2_S3_+0x1cc) [0x7f41539f419c]
+16: 0x0x7f41539f2ac8 at Datacratic::RestServiceEndpoint::handleRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&) const + 0x1d8 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x106ac8/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic19RestServiceEndpoint13handleRequestERKNS0_12ConnectionIdERKNS_11RestRequestE+0x1d8) [0x7f41539f2ac8]
+17: 0x0x7f41539f300d in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x10700d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(+0x10700d) [0x7f41539f300d]
+18: 0x0x7f41539f77ed at Datacratic::HttpNamedEndpoint::RestConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0xfd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x10b7ed/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic17HttpNamedEndpoint21RestConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0xfd) [0x7f41539f77ed]
+19: 0x0x7f415399e2cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f415399e2cb]
+20: 0x0x7f415399d9c9 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x109 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb19c9/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x109) [0x7f415399d9c9]
+21: 0x0x7f415399cb8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f415399cb8d]
+22: 0x0x7f415398cd76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f415398cd76]
+23: 0x0x7f4153989bb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f4153989bb7]
+24: 0x0x7f415398fec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f415398fec4]
+25: 0x0x7f4153990104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f4153990104]
+26: 0x0x7f41539b0af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f41539b0af3]
+27: 0x0x7f41539b0bfd at Datacratic::Epoller::processOne() + 0x4d in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4bfd/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller10processOneEv+0x4d) [0x7f41539b0bfd]
+28: 0x0x7f41539c593c at Datacratic::MessageLoop::processOne() + 0x13c in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xd993c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop10processOneEv+0x13c) [0x7f41539c593c]
+29: 0x0x7f41539c5d31 at Datacratic::MessageLoop::runWorkerThread() + 0xd1 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xd9d31/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop15runWorkerThreadEv+0xd1) [0x7f41539c5d31]
+30: 0x0x7f41539c6685 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xda685/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(+0xda685) [0x7f41539c6685]
+31: 0x0x7f4154a63c78 in /usr/lib/x86_64-linux-gnu/libstdc++.so.6 + 0x6cc78/usr/lib/x86_64-linux-gnu/libstdc++.so.6(+0x6cc78) [0x7f4154a63c78]
+32: 0x0x7f41558b0e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f41558b0e9a]
+33: 0x0x7f415421a38d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f415421a38d]
+
+sent error response 400 "unknown currency code USD"
+
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:58:28Z
+type:   std::runtime_error
+pid:    1679; tid: 1781
+what:   integer out of signed integer range
+stack:
+00: 0x0x7f41556a6ecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f41556a6ecb]
+01: 0x0x7f41532b0a17 at Json::Value::asInt() const + 0x67 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libjsoncpp.so + 0x19a17/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libjsoncpp.so(_ZNK4Json5Value5asIntEv+0x67) [0x7f41532b0a17]
+02: 0x0x7f414c0ebd67 at RTBKIT::CurrencyPool::fromJson(Json::Value const&) + 0xc7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/../bin/libbid_request.so + 0xe8d67/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/../bin/libbid_request.so(_ZN6RTBKIT12CurrencyPool8fromJsonERKN4Json5ValueE+0xc7) [0x7f414c0ebd67]
+03: 0x0x7f4154fcd927 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbanker.so + 0x65927/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbanker.so(+0x65927) [0x7f4154fcd927]
+04: 0x0x7f4154fd4ff3 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbanker.so + 0x6cff3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbanker.so(+0x6cff3) [0x7f4154fd4ff3]
+05: 0x0x7f4153a0598a at Datacratic::RestRequestRouter::processRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&) const + 0x5a in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x11998a/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter14processRequestERKNS_19RestServiceEndpoint12ConnectionIdERKNS_11RestRequestERNS_25RestRequestParsingContextE+0x5a) [0x7f4153a0598a]
+06: 0x0x7f4153a058d8 at Datacratic::RestRequestRouter::Route::process(Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&, Datacratic::RestServiceEndpoint::ConnectionId const&) const + 0x228 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1198d8/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter5Route7processERKNS_11RestRequestERNS_25RestRequestParsingContextERKNS_19RestServiceEndpoint12ConnectionIdE+0x228) [0x7f4153a058d8]
+07: 0x0x7f4153a059d1 at Datacratic::RestRequestRouter::processRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&) const + 0xa1 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1199d1/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter14processRequestERKNS_19RestServiceEndpoint12ConnectionIdERKNS_11RestRequestERNS_25RestRequestParsingContextE+0xa1) [0x7f4153a059d1]
+08: 0x0x7f4153a058d8 at Datacratic::RestRequestRouter::Route::process(Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&, Datacratic::RestServiceEndpoint::ConnectionId const&) const + 0x228 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1198d8/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter5Route7processERKNS_11RestRequestERNS_25RestRequestParsingContextERKNS_19RestServiceEndpoint12ConnectionIdE+0x228) [0x7f4153a058d8]
+09: 0x0x7f4153a059d1 at Datacratic::RestRequestRouter::processRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&) const + 0xa1 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1199d1/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter14processRequestERKNS_19RestServiceEndpoint12ConnectionIdERKNS_11RestRequestERNS_25RestRequestParsingContextE+0xa1) [0x7f4153a059d1]
+10: 0x0x7f4153a058d8 at Datacratic::RestRequestRouter::Route::process(Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&, Datacratic::RestServiceEndpoint::ConnectionId const&) const + 0x228 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1198d8/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter5Route7processERKNS_11RestRequestERNS_25RestRequestParsingContextERKNS_19RestServiceEndpoint12ConnectionIdE+0x228) [0x7f4153a058d8]
+11: 0x0x7f4153a059d1 at Datacratic::RestRequestRouter::processRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&) const + 0xa1 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1199d1/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter14processRequestERKNS_19RestServiceEndpoint12ConnectionIdERKNS_11RestRequestERNS_25RestRequestParsingContextE+0xa1) [0x7f4153a059d1]
+12: 0x0x7f4153a058d8 at Datacratic::RestRequestRouter::Route::process(Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&, Datacratic::RestServiceEndpoint::ConnectionId const&) const + 0x228 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1198d8/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter5Route7processERKNS_11RestRequestERNS_25RestRequestParsingContextERKNS_19RestServiceEndpoint12ConnectionIdE+0x228) [0x7f4153a058d8]
+13: 0x0x7f4153a059d1 at Datacratic::RestRequestRouter::processRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&, Datacratic::RestRequestParsingContext&) const + 0xa1 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1199d1/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter14processRequestERKNS_19RestServiceEndpoint12ConnectionIdERKNS_11RestRequestERNS_25RestRequestParsingContextE+0xa1) [0x7f4153a059d1]
+14: 0x0x7f4153a022ff at Datacratic::RestRequestRouter::handleRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&) const + 0x8f in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1162ff/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic17RestRequestRouter13handleRequestERKNS_19RestServiceEndpoint12ConnectionIdERKNS_11RestRequestE+0x8f) [0x7f4153a022ff]
+15: 0x0x7f41539f419c at std::function<void (Datacratic::RestServiceEndpoint::ConnectionId, Datacratic::RestRequest)>::operator()(Datacratic::RestServiceEndpoint::ConnectionId, Datacratic::RestRequest) const + 0x1cc in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x10819c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNKSt8functionIFvN10Datacratic19RestServiceEndpoint12ConnectionIdENS0_11RestRequestEEEclES2_S3_+0x1cc) [0x7f41539f419c]
+16: 0x0x7f41539f2ac8 at Datacratic::RestServiceEndpoint::handleRequest(Datacratic::RestServiceEndpoint::ConnectionId const&, Datacratic::RestRequest const&) const + 0x1d8 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x106ac8/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZNK10Datacratic19RestServiceEndpoint13handleRequestERKNS0_12ConnectionIdERKNS_11RestRequestE+0x1d8) [0x7f41539f2ac8]
+17: 0x0x7f41539f300d in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x10700d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(+0x10700d) [0x7f41539f300d]
+18: 0x0x7f41539f77ed at Datacratic::HttpNamedEndpoint::RestConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0xfd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x10b7ed/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic17HttpNamedEndpoint21RestConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0xfd) [0x7f41539f77ed]
+19: 0x0x7f415399e2cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f415399e2cb]
+20: 0x0x7f415399d9c9 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x109 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb19c9/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x109) [0x7f415399d9c9]
+21: 0x0x7f415399cb8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f415399cb8d]
+22: 0x0x7f415398cd76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f415398cd76]
+23: 0x0x7f4153989bb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f4153989bb7]
+24: 0x0x7f415398fec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f415398fec4]
+25: 0x0x7f4153990104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f4153990104]
+26: 0x0x7f41539b0af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f41539b0af3]
+27: 0x0x7f41539b0bfd at Datacratic::Epoller::processOne() + 0x4d in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4bfd/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller10processOneEv+0x4d) [0x7f41539b0bfd]
+28: 0x0x7f41539c593c at Datacratic::MessageLoop::processOne() + 0x13c in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xd993c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop10processOneEv+0x13c) [0x7f41539c593c]
+29: 0x0x7f41539c5d31 at Datacratic::MessageLoop::runWorkerThread() + 0xd1 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xd9d31/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop15runWorkerThreadEv+0xd1) [0x7f41539c5d31]
+30: 0x0x7f41539c6685 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xda685/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(+0xda685) [0x7f41539c6685]
+31: 0x0x7f4154a63c78 in /usr/lib/x86_64-linux-gnu/libstdc++.so.6 + 0x6cc78/usr/lib/x86_64-linux-gnu/libstdc++.so.6(+0x6cc78) [0x7f4154a63c78]
+32: 0x0x7f41558b0e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f41558b0e9a]
+33: 0x0x7f415421a38d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f415421a38d]
+
+sent error response 400 "integer out of signed integer range"
+
+2015-06-05 13:58:28.870 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:58:28.870 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:58:38.870 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- redisPhase2TimeMs: 0
+- totalTimeMs: 1
+[0m
+2015-06-05 13:58:38.870 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- redisPhase2TimeMs: 0
+- totalTimeMs: 1
+[0m
+2015-06-05 13:58:48.867 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:58:48.867 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:58:58.872 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:58:58.872 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:59:08.869 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 1
+[0m
+2015-06-05 13:59:08.869 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 1
+[0m
+2015-06-05 13:59:18.871 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 13:59:18.872 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m

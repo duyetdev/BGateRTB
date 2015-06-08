@@ -1,0 +1,35 @@
+FD limit too low: 10240/10240 smaller than recommended 65535
+FD limit raised to: 10240
+2015-06-05 13:38:38.187 [1;32mZMQ [1;34mconnecting to monitor/zeromq[0m
+wexists handler returned -101
+2. returning result 
+2015-06-05 13:38:38.189 [1;32mZMQ [1;34mconnecting to monitor/zeromq[0m
+opening file ./logs/data//2015-06-05/errors-2015-06-05-06:00:00.log with append 0
+  0 ./logs/data//%F/ -1
+  2  16
+  0 / -1
+  2  4
+  0 / -1
+  1  -1
+  0 -%T.log.gz -1
+  0 ./logs/data//%F/ -1
+  2  9
+  0 / -1
+  2  10
+  0 / -1
+  1  -1
+  0 -%T.log.gz -1
+2015-06-05 13:38:38.196 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources [0m
+2015-06-05 13:38:38.197 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:24000[0m
+2015-06-05 13:38:38.206 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources [0m
+2015-06-05 13:38:38.208 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedSocket::socket[0m
+2015-06-05 13:38:38.255 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources serviceClass/adServer/adserver[0m
+2015-06-05 13:38:38.255 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedSocket::socket[0m
+wexists handler returned -101
+2. returning result 
+warning: could not connect to PostAuctionLoop/logger immediately
+2015-06-05 13:38:38.274 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources serviceClass/adServer/adserver, serviceClass/rtbPostAuctionService/PostAuctionLoop[0m
+2015-06-05 13:38:38.274 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedSocket::socket[0m
+wexists handler returned -101
+2. returning result 
+warning: could not connect to router/logger immediately

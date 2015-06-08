@@ -1,0 +1,544 @@
+FD limit too low: 10240/10240 smaller than recommended 65535
+FD limit raised to: 10240
+ redisUri=localhost:6379
+2015-06-05 15:41:26.004 [1;32mMasterBanker [1;34msuccessfully loaded accounts[0m
+bound tcp for http port 9985
+master banker is listening on tcp://*:22000,http://0.0.0.0:9985
+2015-06-05 15:41:26.039 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedEndpoint::socket[0m
+serviceClass/rtbAgentConfiguration/agentConfigurationService --> {"serviceLocation":"mtl","serviceName":"agentConfigurationService","servicePath":"agentConfigurationService"}
+serviceClass/monitor/monitor --> {"serviceLocation":"mtl","serviceName":"monitor","servicePath":"monitor"}
+serviceClass/adServer/adserver --> {"serviceLocation":"mtl","serviceName":"adserver","servicePath":"adserver"}
+serviceClass/rtbBanker/masterBanker --> {"serviceLocation":"mtl","serviceName":"masterBanker","servicePath":"masterBanker"}
+monitor/http/tcp --> [{"httpUri":"http://127.0.0.1:9987","transports":[{"addr":"127.0.0.1","hostScope":"ubuntu-virtual-machine","name":"tcp","port":9987},{"name":"http","uri":"http://127.0.0.1:9987"}]},{"httpUri":"http://192.168.26.23:9987","transports":[{"addr":"192.168.26.23","hostScope":"*","name":"tcp","port":9987},{"name":"http","uri":"http://192.168.26.23:9987"}]}]
+monitor/zeromq/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ubuntu-virtual-machine","name":"tcp","port":24000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:24000"}],"zmqConnectUri":"tcp://127.0.0.1:24000"},{"transports":[{"addr":"192.168.26.23","hostScope":"*","name":"tcp","port":24000},{"name":"zeromq","socketType":6,"uri":"tcp://ubuntu-virtual-machine:24000"}],"zmqConnectUri":"tcp://ubuntu-virtual-machine:24000"}]
+masterBanker/http/tcp --> [{"httpUri":"http://127.0.0.1:9985","transports":[{"addr":"127.0.0.1","hostScope":"ubuntu-virtual-machine","name":"tcp","port":9985},{"name":"http","uri":"http://127.0.0.1:9985"}]},{"httpUri":"http://192.168.26.23:9985","transports":[{"addr":"192.168.26.23","hostScope":"*","name":"tcp","port":9985},{"name":"http","uri":"http://192.168.26.23:9985"}]}]
+masterBanker/zeromq/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ubuntu-virtual-machine","name":"tcp","port":22000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:22000"}],"zmqConnectUri":"tcp://127.0.0.1:22000"},{"transports":[{"addr":"192.168.26.23","hostScope":"*","name":"tcp","port":22000},{"name":"zeromq","socketType":6,"uri":"tcp://ubuntu-virtual-machine:22000"}],"zmqConnectUri":"tcp://ubuntu-virtual-machine:22000"}]
+adserver/logger/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ubuntu-virtual-machine","name":"tcp","port":25000},{"name":"zeromq","socketType":9,"uri":"tcp://127.0.0.1:25000"}],"zmqConnectUri":"tcp://127.0.0.1:25000"},{"transports":[{"addr":"192.168.26.23","hostScope":"*","name":"tcp","port":25000},{"name":"zeromq","socketType":9,"uri":"tcp://ubuntu-virtual-machine:25000"}],"zmqConnectUri":"tcp://ubuntu-virtual-machine:25000"}]
+2015-06-05 15:41:36.006 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:41:36.006 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:41:46.007 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:41:46.007 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:41:56.007 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:41:56.007 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:42:06.010 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:42:06.010 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:42:16.008 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:42:16.008 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:42:26.010 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:42:26.010 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:42:36.007 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:42:36.007 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:42:46.010 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:42:46.010 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:42:56.006 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:42:56.006 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:43:06.009 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:43:06.009 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:43:16.006 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:43:16.006 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:43:26.010 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:43:26.010 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:43:36.008 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:43:36.008 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:43:46.007 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:43:46.007 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:43:56.006 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:43:56.006 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:44:06.009 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:44:06.009 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:44:16.010 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:44:16.010 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:44:26.009 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:44:26.009 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:44:36.005 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:44:36.005 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:44:46.009 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:44:46.009 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:44:56.008 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:44:56.009 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:45:06.009 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:45:06.009 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:45:16.008 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:45:16.008 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:45:26.005 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:45:26.005 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:45:36.008 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:45:36.008 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:45:46.010 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 1
+[0m
+2015-06-05 15:45:46.011 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 1
+[0m
+2015-06-05 15:45:56.008 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:45:56.008 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:46:06.006 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:46:06.007 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:46:16.009 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:46:16.010 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:46:26.008 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:46:26.009 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:46:36.009 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 1
+[0m
+2015-06-05 15:46:36.009 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 1
+[0m
+2015-06-05 15:46:46.005 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:46:46.006 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:46:56.008 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:46:56.009 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:47:06.007 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:47:06.007 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:47:16.007 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:47:16.008 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:47:26.006 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:47:26.006 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:47:36.008 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:47:36.008 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:47:46.006 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:47:46.006 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:47:56.007 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:47:56.007 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:48:06.010 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:48:06.010 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:48:16.006 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:48:16.007 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:48:26.008 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:48:26.008 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:48:36.005 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:48:36.006 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:48:46.009 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m
+2015-06-05 15:48:46.009 [1;32mMasterBanker Trace [1;34m
+Latency report for save state
+- inPhase1TimeMs: 0
+- redisPhase1TimeMs: 0
+- totalTimeMs: 0
+[0m

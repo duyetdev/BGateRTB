@@ -1,0 +1,26 @@
+FD limit at: 65535
+2015-06-06 12:58:04.534 [1;32mZMQ [1;34mconnecting to monitor/zeromq[0m
+2015-06-06 12:58:04.535 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:24000[0m
+opening file ./logs/data//2015-06-06/errors-2015-06-06-05:00:00.log with append 0
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-06T05:58:04Z
+type:   ML::Exception
+pid:    4859; tid: 4866
+what:   open of ./logs/data//2015-06-06/errors-2015-06-06-05:00:00.log: Permission denied
+stack:
+00: 0x0x7f43f39e0ecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f43f39e0ecb]
+01: 0x0x7f43f1a108da at Datacratic::FileSink::open(std::string const&, bool, bool) + 0x81a in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/liblogger.so + 0x678da/home/ubuntu/rtbkit/build/x86_64/bin/../bin/liblogger.so(_ZN10Datacratic8FileSink4openERKSsbb+0x81a) [0x7f43f1a108da]
+02: 0x0x7f43f1a10983 at Datacratic::FileSink::FileSink(std::string const&, bool, bool) + 0x83 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/liblogger.so + 0x67983/home/ubuntu/rtbkit/build/x86_64/bin/../bin/liblogger.so(_ZN10Datacratic8FileSinkC1ERKSsbb+0x83) [0x7f43f1a10983]
+03: 0x0x7f43f1a10a43 at Datacratic::FileOutput::createSink(std::string const&, bool) + 0xa3 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/liblogger.so + 0x67a43/home/ubuntu/rtbkit/build/x86_64/bin/../bin/liblogger.so(_ZN10Datacratic10FileOutput10createSinkERKSsb+0xa3) [0x7f43f1a10a43]
+04: 0x0x7f43f1a11003 at Datacratic::NamedOutput::switchFile(std::string const&, std::string const&, int) + 0x123 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/liblogger.so + 0x68003/home/ubuntu/rtbkit/build/x86_64/bin/../bin/liblogger.so(_ZN10Datacratic11NamedOutput10switchFileERKSsS2_i+0x123) [0x7f43f1a11003]
+05: 0x0x7f43f1a1129b at Datacratic::NamedOutput::open(std::string const&, std::string const&, int) + 0x3b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/liblogger.so + 0x6829b/home/ubuntu/rtbkit/build/x86_64/bin/../bin/liblogger.so(_ZN10Datacratic11NamedOutput4openERKSsS2_i+0x3b) [0x7f43f1a1129b]
+06: 0x0x7f43f1a11a36 at Datacratic::RotatingFileOutput::createFile(std::string const&) + 0x486 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/liblogger.so + 0x68a36/home/ubuntu/rtbkit/build/x86_64/bin/../bin/liblogger.so(_ZN10Datacratic18RotatingFileOutput10createFileERKSs+0x486) [0x7f43f1a11a36]
+07: 0x0x7f43f1a2c8d3 at Datacratic::RotatingOutputAdaptor::openSubordinate(Datacratic::Date) + 0x93 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/liblogger.so + 0x838d3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/liblogger.so(_ZN10Datacratic21RotatingOutputAdaptor15openSubordinateENS_4DateE+0x93) [0x7f43f1a2c8d3]
+08: 0x0x7f43f1a2b3df at Datacratic::RotatingOutput::runRotateThread() + 0x1f in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/liblogger.so + 0x823df/home/ubuntu/rtbkit/build/x86_64/bin/../bin/liblogger.so(_ZN10Datacratic14RotatingOutput15runRotateThreadEv+0x1f) [0x7f43f1a2b3df]
+09: 0x0x7f43f17982aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f43f17982aa]
+10: 0x0x7f43f3beae9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f43f3beae9a]
+11: 0x0x7f43f223c38d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f43f223c38d]
+
+terminate called after throwing an instance of 'ML::Exception'
+  what():  open of ./logs/data//2015-06-06/errors-2015-06-06-05:00:00.log: Permission denied

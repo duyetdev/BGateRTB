@@ -1,0 +1,22 @@
+FD limit at: 65535
+2015-06-06 10:53:06.585 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources FrequencyCapAugmentor::palEvents[0m
+2015-06-06 10:53:06.585 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources [0m
+2015-06-06 10:53:06.620 [1;32mZMQ [1;34mconnecting to agentConfigurationService/listen[0m
+wexists handler returned -101
+2. returning result 
+2015-06-06 10:53:06.681 [1;32mZMQ [1;34mconnecting to agentConfigurationService/listen[0m
+2015-06-06 10:53:06.684 [1;32mZMQ [1;34mconnecting to agentConfigurationService/listen[0m
+2015-06-06 10:53:06.687 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:19000[0m
+got configuration message fixed-price-agent-ex_2715
+2015-06-06 10:53:06.774 [1;32mZMQ Trace [1;34mconnecting to router.augmentationLoop / router.augmentationLoop[0m
+2015-06-06 10:53:06.774 [1;32mZMQ [1;34mconnecting to router.augmentationLoop/augmentors[0m
+wexists handler returned -101
+2. returning result 
+2015-06-06 10:53:06.783 [1;32mZMQ [1;34mconnecting to router.augmentationLoop/augmentors[0m
+2015-06-06 10:53:06.783 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources [0m
+2015-06-06 10:53:06.783 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedSocket::socket[0m
+2015-06-06 10:53:06.785 [1;32mZMQ [1;34mconnecting to router.augmentationLoop/augmentors[0m
+wexists handler returned -101
+2. returning result 
+warning: could not connect to PostAuctionLoop/logger immediately
+2015-06-06 10:53:06.788 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:18000[0m

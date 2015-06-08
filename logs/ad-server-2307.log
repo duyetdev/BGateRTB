@@ -1,0 +1,32 @@
+FD limit too low: 10240/10240 smaller than recommended 65535
+FD limit raised to: 10240
+listening on hostname 0.0.0.0 port 12340
+listening on hostname 0.0.0.0 port 12341
+2015-06-05 15:52:01.941 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedEndpoint::socket[0m
+2015-06-05 15:52:02.050 [1;32mZMQ Trace [1;34mconnecting to PostAuctionLoop / PostAuctionLoop[0m
+2015-06-05 15:52:02.050 [1;32mZMQ [1;34mconnecting to PostAuctionLoop/events[0m
+wexists handler returned -101
+2. returning result 
+2015-06-05 15:52:02.059 [1;32mZMQ [1;34mconnecting to PostAuctionLoop/events[0m
+2015-06-05 15:52:02.061 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:20000[0m
+2015-06-05 22:26:20,715:2307(0x7f6d22041700):ZOO_ERROR@handle_socket_error_msg@1723: Socket [127.0.0.1:2181] zk retcode=-4, errno=112(Host is down): failed while receiving a server response
+2015-06-05 22:26:20,716:2307(0x7f6d22041700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-05 22:26:21,717:2307(0x7f6d22041700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-05 22:26:22,050:2307(0x7f6d22041700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-05 22:26:22,383:2307(0x7f6d22041700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-05 22:26:22,716:2307(0x7f6d22041700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-05 22:26:23,084:2307(0x7f6d22041700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-05 22:26:23,417:2307(0x7f6d22041700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-05 22:26:23,751:2307(0x7f6d22041700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-05 22:26:24,084:2307(0x7f6d22041700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-05 22:26:24,417:2307(0x7f6d22041700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-05 22:26:24,751:2307(0x7f6d22041700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-05 22:26:25,084:2307(0x7f6d22041700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-05 22:26:25,418:2307(0x7f6d22041700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-05 22:26:25,751:2307(0x7f6d22041700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-05 22:26:26,085:2307(0x7f6d22041700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-05 22:26:26,418:2307(0x7f6d22041700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+ZookeeperConnection:connect: waiting 7.561 seconds 
+2015-06-05 22:26:34,280:2307(0x7f6d1a3da700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-05 22:26:34,614:2307(0x7f6d1a3da700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-05 22:26:34.975 [1;32mZMQ Trace [1;34mPostAuctionLoop / PostAuctionLoop is already connected[0m

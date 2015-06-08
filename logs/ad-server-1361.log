@@ -1,0 +1,1231 @@
+FD limit too low: 10240/10240 smaller than recommended 65535
+FD limit raised to: 10240
+listening on hostname 0.0.0.0 port 12340
+listening on hostname 0.0.0.0 port 12341
+2015-06-05 13:38:38.185 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedEndpoint::socket[0m
+2015-06-05 13:38:38.253 [1;32mZMQ Trace [1;34mconnecting to PostAuctionLoop / PostAuctionLoop[0m
+2015-06-05 13:38:38.254 [1;32mZMQ [1;34mconnecting to PostAuctionLoop/events[0m
+wexists handler returned -101
+2. returning result 
+2015-06-05 13:38:38.269 [1;32mZMQ [1;34mconnecting to PostAuctionLoop/events[0m
+2015-06-05 13:38:38.271 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:20000[0m
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:38:58Z
+type:   ML::Exception
+pid:    1361; tid: 1412
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b619c9 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x109 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb19c9/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x109) [0x7f55e8b619c9]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:04Z
+type:   ML::Exception
+pid:    1361; tid: 1412
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:04Z
+type:   ML::Exception
+pid:    1361; tid: 1413
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:04Z
+type:   ML::Exception
+pid:    1361; tid: 1412
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:04Z
+type:   ML::Exception
+pid:    1361; tid: 1410
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:05Z
+type:   ML::Exception
+pid:    1361; tid: 1410
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:05Z
+type:   ML::Exception
+pid:    1361; tid: 1413
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:05Z
+type:   ML::Exception
+pid:    1361; tid: 1410
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:05Z
+type:   ML::Exception
+pid:    1361; tid: 1411
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:05Z
+type:   ML::Exception
+pid:    1361; tid: 1411
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:05Z
+type:   ML::Exception
+pid:    1361; tid: 1412
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:06Z
+type:   ML::Exception
+pid:    1361; tid: 1411
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:06Z
+type:   ML::Exception
+pid:    1361; tid: 1411
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:06Z
+type:   ML::Exception
+pid:    1361; tid: 1412
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:06Z
+type:   ML::Exception
+pid:    1361; tid: 1413
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:06Z
+type:   ML::Exception
+pid:    1361; tid: 1410
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:06Z
+type:   ML::Exception
+pid:    1361; tid: 1413
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:07Z
+type:   ML::Exception
+pid:    1361; tid: 1410
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:07Z
+type:   ML::Exception
+pid:    1361; tid: 1410
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:07Z
+type:   ML::Exception
+pid:    1361; tid: 1412
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:07Z
+type:   ML::Exception
+pid:    1361; tid: 1411
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:07Z
+type:   ML::Exception
+pid:    1361; tid: 1413
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:08Z
+type:   ML::Exception
+pid:    1361; tid: 1412
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:08Z
+type:   ML::Exception
+pid:    1361; tid: 1412
+what:   unknown location field bidRequestId
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"bidRequestId" : "4BZkWjMDeAWZ",
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field bidRequestId
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:14Z
+type:   ML::Exception
+pid:    1361; tid: 1412
+what:   unknown location field impid
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b61a37 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x177 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1a37/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x177) [0x7f55e8b61a37]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"impid" : "604356",
+	"timestamp" : 1365517883.974289,
+	"type" : "CONVERSION"
+}
+: unknown location field impid
+error token: c = d
+error: parsing JSON payload: * Line 2, Column 7
+  Missing '}' or object member name
+
+error token: c = d
+error: parsing JSON payload: * Line 2, Column 7
+  Missing '}' or object member name
+
+error token: c = a
+token.type_ = 13
+error: parsing JSON payload: * Line 1, Column 1
+  Syntax error: value, object or array expected.
+
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:39:57Z
+type:   ML::Exception
+pid:    1361; tid: 1413
+what:   invalid content type 'application/x-www-form-urlencoded' for JSON
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e8b66e75 at Datacratic::JsonConnectionHandler::handleHttpHeader(Datacratic::HttpHeader const&) + 0xb5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb6e75/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler16handleHttpHeaderERKNS_10HttpHeaderE+0xb5) [0x7f55e8b66e75]
+02: 0x0x7f55e8b61992 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0xd2 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1992/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0xd2) [0x7f55e8b61992]
+03: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+04: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+05: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+06: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+07: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+08: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+09: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+10: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+11: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+12: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error: handler input had exception invalid content type 'application/x-www-form-urlencoded' for JSON
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:40:05Z
+type:   ML::Exception
+pid:    1361; tid: 1412
+what:   invalid content type 'application/x-www-form-urlencoded' for JSON
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e8b66e75 at Datacratic::JsonConnectionHandler::handleHttpHeader(Datacratic::HttpHeader const&) + 0xb5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb6e75/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler16handleHttpHeaderERKNS_10HttpHeaderE+0xb5) [0x7f55e8b66e75]
+02: 0x0x7f55e8b61992 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0xd2 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1992/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0xd2) [0x7f55e8b61992]
+03: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+04: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+05: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+06: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+07: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+08: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+09: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+10: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+11: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+12: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error: handler input had exception invalid content type 'application/x-www-form-urlencoded' for JSON
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:40:55Z
+type:   ML::Exception
+pid:    1361; tid: 1410
+what:   unknown location field providerConfig
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b619c9 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x109 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb19c9/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x109) [0x7f55e8b619c9]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"providerConfig" : 
+	{
+		"bidswitch" : 
+		{
+			"iurl" : "http://www.gnu.org",
+			"seat" : "12345"
+		}
+	}
+}
+: unknown location field providerConfig
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:41:40Z
+type:   ML::Exception
+pid:    1361; tid: 1410
+what:   unknown location field serviceName
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b619c9 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x109 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb19c9/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x109) [0x7f55e8b619c9]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+{
+	"serviceName" : "master_banker",
+	"servicePath" : "master_banker"
+}
+: unknown location field serviceName
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:41:48Z
+type:   ML::Exception
+pid:    1361; tid: 1413
+what:   unknown location field 
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e779be1c at RTBKIT::PostAuctionEvent::PostAuctionEvent(Json::Value const&) + 0xaec in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so + 0x94e1c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/librtb.so(_ZN6RTBKIT16PostAuctionEventC1ERKN4Json5ValueE+0xaec) [0x7f55e779be1c]
+02: 0x0x7f55db136857 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f857/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f857) [0x7f55db136857]
+03: 0x0x7f55db1368c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x1f8c7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x1f8c7) [0x7f55db1368c7]
+04: 0x0x7f55e910dbe6 at RTBKIT::HttpAdServerConnectionHandler::handleJson(Datacratic::HttpHeader const&, Json::Value const&, std::string const&) + 0x96 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2dbe6/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT29HttpAdServerConnectionHandler10handleJsonERKN10Datacratic10HttpHeaderERKN4Json5ValueERKSs+0x96) [0x7f55e910dbe6]
+05: 0x0x7f55e8b68d52 at Datacratic::JsonConnectionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x702 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb8d52/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler17handleHttpPayloadERKNS_10HttpHeaderERKSs+0x702) [0x7f55e8b68d52]
+06: 0x0x7f55e8b622cb at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x33b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb22cb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x33b) [0x7f55e8b622cb]
+07: 0x0x7f55e8b619c9 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x109 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb19c9/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x109) [0x7f55e8b619c9]
+08: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+09: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+10: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+11: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+12: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+13: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+14: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+15: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+16: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+17: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error parsing adserver request 
+[
+	
+	{
+		"httpUri" : "http://127.0.0.1:9985",
+		"transports" : 
+		[
+			
+			{
+				"addr" : "127.0.0.1",
+				"hostScope" : "rtb",
+				"name" : "tcp",
+				"port" : 9985
+			},
+			
+			{
+				"name" : "http",
+				"uri" : "http://127.0.0.1:9985"
+			}
+		]
+	},
+	
+	{
+		"httpUri" : "http://aaa.bbb.ccc.ddd:9985",
+		"transports" : 
+		[
+			
+			{
+				"addr" : "aaa.bbb.ccc.ddd",
+				"hostScope" : "*",
+				"name" : "tcp",
+				"port" : 9985
+			},
+			
+			{
+				"name" : "http",
+				"uri" : "http://aaa.bbb.ccc.ddd:9985"
+			}
+		]
+	}
+]
+: unknown location field 
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:42:48Z
+type:   ML::Exception
+pid:    1361; tid: 1413
+what:   invalid verb
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e8b66e75 at Datacratic::JsonConnectionHandler::handleHttpHeader(Datacratic::HttpHeader const&) + 0xb5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb6e75/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler16handleHttpHeaderERKNS_10HttpHeaderE+0xb5) [0x7f55e8b66e75]
+02: 0x0x7f55e8b61992 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0xd2 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1992/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0xd2) [0x7f55e8b61992]
+03: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+04: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+05: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+06: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+07: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+08: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+09: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+10: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+11: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+12: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error: handler input had exception invalid verb
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:42:48Z
+type:   ML::Exception
+pid:    1361; tid: 1413
+what:   invalid verb
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e8b66e75 at Datacratic::JsonConnectionHandler::handleHttpHeader(Datacratic::HttpHeader const&) + 0xb5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb6e75/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler16handleHttpHeaderERKNS_10HttpHeaderE+0xb5) [0x7f55e8b66e75]
+02: 0x0x7f55e8b61992 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0xd2 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1992/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0xd2) [0x7f55e8b61992]
+03: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+04: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+05: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+06: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+07: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+08: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+09: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+10: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+11: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+12: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error: handler input had exception invalid verb
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:42:48Z
+type:   ML::Exception
+pid:    1361; tid: 1411
+what:   invalid verb
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e8b66e75 at Datacratic::JsonConnectionHandler::handleHttpHeader(Datacratic::HttpHeader const&) + 0xb5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb6e75/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler16handleHttpHeaderERKNS_10HttpHeaderE+0xb5) [0x7f55e8b66e75]
+02: 0x0x7f55e8b61992 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0xd2 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1992/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0xd2) [0x7f55e8b61992]
+03: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+04: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+05: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+06: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+07: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+08: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+09: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+10: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+11: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+12: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error: handler input had exception invalid verb
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:42:48Z
+type:   ML::Exception
+pid:    1361; tid: 1413
+what:   invalid verb
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e8b66e75 at Datacratic::JsonConnectionHandler::handleHttpHeader(Datacratic::HttpHeader const&) + 0xb5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb6e75/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler16handleHttpHeaderERKNS_10HttpHeaderE+0xb5) [0x7f55e8b66e75]
+02: 0x0x7f55e8b61992 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0xd2 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1992/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0xd2) [0x7f55e8b61992]
+03: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+04: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+05: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+06: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+07: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+08: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+09: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+10: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+11: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+12: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error: handler input had exception invalid verb
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:42:51Z
+type:   ML::Exception
+pid:    1361; tid: 1411
+what:   invalid verb
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e8b66e75 at Datacratic::JsonConnectionHandler::handleHttpHeader(Datacratic::HttpHeader const&) + 0xb5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb6e75/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler16handleHttpHeaderERKNS_10HttpHeaderE+0xb5) [0x7f55e8b66e75]
+02: 0x0x7f55e8b61992 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0xd2 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1992/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0xd2) [0x7f55e8b61992]
+03: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+04: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+05: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+06: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+07: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+08: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+09: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+10: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+11: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+12: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error: handler input had exception invalid verb
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:42:52Z
+type:   ML::Exception
+pid:    1361; tid: 1413
+what:   invalid verb
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e8b66e75 at Datacratic::JsonConnectionHandler::handleHttpHeader(Datacratic::HttpHeader const&) + 0xb5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb6e75/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler16handleHttpHeaderERKNS_10HttpHeaderE+0xb5) [0x7f55e8b66e75]
+02: 0x0x7f55e8b61992 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0xd2 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1992/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0xd2) [0x7f55e8b61992]
+03: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+04: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+05: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+06: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+07: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+08: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+09: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+10: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+11: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+12: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error: handler input had exception invalid verb
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:42:52Z
+type:   ML::Exception
+pid:    1361; tid: 1410
+what:   invalid verb
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e8b66e75 at Datacratic::JsonConnectionHandler::handleHttpHeader(Datacratic::HttpHeader const&) + 0xb5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb6e75/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler16handleHttpHeaderERKNS_10HttpHeaderE+0xb5) [0x7f55e8b66e75]
+02: 0x0x7f55e8b61992 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0xd2 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1992/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0xd2) [0x7f55e8b61992]
+03: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+04: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+05: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+06: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+07: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+08: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+09: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+10: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+11: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+12: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error: handler input had exception invalid verb
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T06:42:52Z
+type:   ML::Exception
+pid:    1361; tid: 1412
+what:   invalid verb
+stack:
+00: 0x0x7f55e978fecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f55e978fecb]
+01: 0x0x7f55e8b66e75 at Datacratic::JsonConnectionHandler::handleHttpHeader(Datacratic::HttpHeader const&) + 0xb5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb6e75/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler16handleHttpHeaderERKNS_10HttpHeaderE+0xb5) [0x7f55e8b66e75]
+02: 0x0x7f55e8b61992 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0xd2 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1992/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0xd2) [0x7f55e8b61992]
+03: 0x0x7f55e8b60b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7f55e8b60b8d]
+04: 0x0x7f55e8b50d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7f55e8b50d76]
+05: 0x0x7f55e8b4dbb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7f55e8b4dbb7]
+06: 0x0x7f55e8b53ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7f55e8b53ec4]
+07: 0x0x7f55e8b54104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7f55e8b54104]
+08: 0x0x7f55e8b74af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7f55e8b74af3]
+09: 0x0x7f55e8b54b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7f55e8b54b0d]
+10: 0x0x7f55e65032aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7f55e65032aa]
+11: 0x0x7f55e9999e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f55e9999e9a]
+12: 0x0x7f55e7fd338d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f55e7fd338d]
+
+error: handler input had exception invalid verb

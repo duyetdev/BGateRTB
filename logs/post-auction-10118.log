@@ -1,0 +1,24 @@
+FD limit at: 65535
+2015-06-05 23:43:04.067 [1;32mPostAuctionService [1;34mCreating SimpleEventMatcher[0m
+zookeeper error on zoo_create, path /rtb-test/serviceClass/rtbPostAuctionService/PostAuctionLoop: node exists
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T16:43:04Z
+type:   ML::Exception
+pid:    10118; tid: 10118
+what:   Zookeeper error on zoo_create, path /rtb-test/serviceClass/rtbPostAuctionService/PostAuctionLoop: node exists
+stack:
+00: 0x0x7f262cb6becb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f262cb6becb]
+01: 0x0x7f262c190e63 at Datacratic::ZookeeperConnection::checkRes(int, int&, char const*, char const*) + 0xe3 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x139e63/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic19ZookeeperConnection8checkResEiRiPKcS3_+0xe3) [0x7f262c190e63]
+02: 0x0x7f262c190a61 at Datacratic::ZookeeperConnection::createNode(std::string const&, std::string const&, bool, bool, bool, bool) + 0x441 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x139a61/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic19ZookeeperConnection10createNodeERKSsS2_bbbb+0x441) [0x7f262c190a61]
+03: 0x0x7f262c13da85 at Datacratic::ZookeeperConfigurationService::setUnique(std::string const&, Json::Value const&) + 0x285 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xe6a85/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic29ZookeeperConfigurationService9setUniqueERKSsRKN4Json5ValueE+0x285) [0x7f262c13da85]
+04: 0x0x7f262c1287da at Datacratic::ServiceBase::registerShardedServiceProvider(std::string const&, std::vector<std::string, std::allocator<std::string> > const&, unsigned long) + 0x21a in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xd17da/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11ServiceBase30registerShardedServiceProviderERKSsRKSt6vectorISsSaISsEEm+0x21a) [0x7f262c1287da]
+05: 0x0x7f262c4af1ad at RTBKIT::PostAuctionService::initConnections(unsigned long) + 0xcd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libpost_auction.so + 0x991ad/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libpost_auction.so(_ZN6RTBKIT18PostAuctionService15initConnectionsEm+0xcd) [0x7f262c4af1ad]
+06: 0x0x7f262c4b1462 at RTBKIT::PostAuctionService::init(unsigned long, unsigned long) + 0xf2 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libpost_auction.so + 0x9b462/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libpost_auction.so(_ZN6RTBKIT18PostAuctionService4initEmm+0xf2) [0x7f262c4b1462]
+07: 0x0x42a534 at RTBKIT::PostAuctionRunner::init() + 0x294 in build/x86_64/bin/post_auction_runner + 0x2a534build/x86_64/bin/post_auction_runner(_ZN6RTBKIT17PostAuctionRunner4initEv+0x294) [0x42a534]
+08: 0x0x425fef at main + 0x7f in build/x86_64/bin/post_auction_runner + 0x25fefbuild/x86_64/bin/post_auction_runner(main+0x7f) [0x425fef]
+09: 0x0x7f262ad4676d at __libc_start_main + 0xed in /lib/x86_64-linux-gnu/libc.so.6 + 0x2176d/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed) [0x7f262ad4676d]
+10: 0x0x426875 in build/x86_64/bin/post_auction_runner + 0x26875build/x86_64/bin/post_auction_runner() [0x426875]
+
+terminate called after throwing an instance of 'ML::Exception'
+  what():  Zookeeper error on zoo_create, path /rtb-test/serviceClass/rtbPostAuctionService/PostAuctionLoop: node exists

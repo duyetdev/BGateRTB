@@ -1,0 +1,21 @@
+FD limit at: 65535
+zookeeper error on zoo_create, path /rtb-test/serviceClass/rtbAgentConfiguration/agentConfigurationService: node exists
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T16:43:31Z
+type:   ML::Exception
+pid:    10219; tid: 10219
+what:   Zookeeper error on zoo_create, path /rtb-test/serviceClass/rtbAgentConfiguration/agentConfigurationService: node exists
+stack:
+00: 0x0x7fe7eaee8ecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7fe7eaee8ecb]
+01: 0x0x7fe7e92c0e63 at Datacratic::ZookeeperConnection::checkRes(int, int&, char const*, char const*) + 0xe3 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x139e63/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic19ZookeeperConnection8checkResEiRiPKcS3_+0xe3) [0x7fe7e92c0e63]
+02: 0x0x7fe7e92c0a61 at Datacratic::ZookeeperConnection::createNode(std::string const&, std::string const&, bool, bool, bool, bool) + 0x441 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x139a61/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic19ZookeeperConnection10createNodeERKSsS2_bbbb+0x441) [0x7fe7e92c0a61]
+03: 0x0x7fe7e926da85 at Datacratic::ZookeeperConfigurationService::setUnique(std::string const&, Json::Value const&) + 0x285 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xe6a85/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic29ZookeeperConfigurationService9setUniqueERKSsRKN4Json5ValueE+0x285) [0x7fe7e926da85]
+04: 0x0x7fe7e92584d4 at Datacratic::ServiceBase::registerServiceProvider(std::string const&, std::vector<std::string, std::allocator<std::string> > const&) + 0x1c4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xd14d4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11ServiceBase23registerServiceProviderERKSsRKSt6vectorISsSaISsEE+0x1c4) [0x7fe7e92584d4]
+05: 0x0x7fe7ea850c5b at RTBKIT::AgentConfigurationService::init() + 0x14b in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libagent_configuration.so + 0x72c5b/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libagent_configuration.so(_ZN6RTBKIT25AgentConfigurationService4initEv+0x14b) [0x7fe7ea850c5b]
+06: 0x0x40b8cb at main + 0x3fb in build/x86_64/bin/agent_configuration_service_runner + 0xb8cbbuild/x86_64/bin/agent_configuration_service_runner(main+0x3fb) [0x40b8cb]
+07: 0x0x7fe7e978f76d at __libc_start_main + 0xed in /lib/x86_64-linux-gnu/libc.so.6 + 0x2176d/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed) [0x7fe7e978f76d]
+08: 0x0x40bbe5 in build/x86_64/bin/agent_configuration_service_runner + 0xbbe5build/x86_64/bin/agent_configuration_service_runner() [0x40bbe5]
+
+terminate called after throwing an instance of 'ML::Exception'
+  what():  Zookeeper error on zoo_create, path /rtb-test/serviceClass/rtbAgentConfiguration/agentConfigurationService: node exists

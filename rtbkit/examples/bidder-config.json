@@ -1,0 +1,12 @@
+{
+    "type": "http",
+    "router": {
+        "host": "http://downstream-host:8950",
+        "path": "/auctions"
+    },
+    "adserver": {
+          "host": "http://downstream-host",
+          "winPort": 18143,
+          "eventPort": 18144
+    }
+}

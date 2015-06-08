@@ -1,0 +1,86 @@
+FD limit at: 65535
+listening on hostname 0.0.0.0 port 12340
+listening on hostname 0.0.0.0 port 12341
+2015-06-06 10:53:49.894 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedEndpoint::socket[0m
+2015-06-06 10:53:49.984 [1;32mZMQ Trace [1;34mconnecting to PostAuctionLoop / PostAuctionLoop[0m
+2015-06-06 10:53:49.984 [1;32mZMQ [1;34mconnecting to PostAuctionLoop/events[0m
+wexists handler returned -101
+2. returning result 
+2015-06-06 10:53:50.040 [1;32mZMQ [1;34mconnecting to PostAuctionLoop/events[0m
+2015-06-06 10:53:50.043 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:20000[0m
+token.type_ = 0
+error: parsing JSON payload: * Line 1, Column 1
+  Syntax error: value, object or array expected.
+
+token.type_ = 0
+error: parsing JSON payload: * Line 1, Column 1
+  Syntax error: value, object or array expected.
+
+token.type_ = 0
+error: parsing JSON payload: * Line 1, Column 1
+  Syntax error: value, object or array expected.
+
+token.type_ = 0
+error: parsing JSON payload: * Line 1, Column 1
+  Syntax error: value, object or array expected.
+
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-06T04:37:05Z
+type:   ML::Exception
+pid:    2852; tid: 2905
+what:   invalid content type 'application/x-www-form-urlencoded' for JSON
+stack:
+00: 0x0x7ffe4e4b2ecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7ffe4e4b2ecb]
+01: 0x0x7ffe4d889e75 at Datacratic::JsonConnectionHandler::handleHttpHeader(Datacratic::HttpHeader const&) + 0xb5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb6e75/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler16handleHttpHeaderERKNS_10HttpHeaderE+0xb5) [0x7ffe4d889e75]
+02: 0x0x7ffe4d884992 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0xd2 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1992/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0xd2) [0x7ffe4d884992]
+03: 0x0x7ffe4d883b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7ffe4d883b8d]
+04: 0x0x7ffe4d873d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7ffe4d873d76]
+05: 0x0x7ffe4d870bb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7ffe4d870bb7]
+06: 0x0x7ffe4d876ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7ffe4d876ec4]
+07: 0x0x7ffe4d877104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7ffe4d877104]
+08: 0x0x7ffe4d897af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7ffe4d897af3]
+09: 0x0x7ffe4d877b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7ffe4d877b0d]
+10: 0x0x7ffe4b2262aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7ffe4b2262aa]
+11: 0x0x7ffe4e6bce9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7ffe4e6bce9a]
+12: 0x0x7ffe4ccf638d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7ffe4ccf638d]
+
+error: handler input had exception invalid content type 'application/x-www-form-urlencoded' for JSON
+token.type_ = 0
+error: parsing JSON payload: * Line 1, Column 1
+  Syntax error: value, object or array expected.
+
+token.type_ = 0
+error: parsing JSON payload: * Line 1, Column 1
+  Syntax error: value, object or array expected.
+
+token.type_ = 0
+error: parsing JSON payload: * Line 1, Column 1
+  Syntax error: value, object or array expected.
+
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-06T04:38:21Z
+type:   ML::Exception
+pid:    2852; tid: 2905
+what:   invalid content type 'application/x-www-form-urlencoded' for JSON
+stack:
+00: 0x0x7ffe4e4b2ecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7ffe4e4b2ecb]
+01: 0x0x7ffe4d889e75 at Datacratic::JsonConnectionHandler::handleHttpHeader(Datacratic::HttpHeader const&) + 0xb5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb6e75/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21JsonConnectionHandler16handleHttpHeaderERKNS_10HttpHeaderE+0xb5) [0x7ffe4d889e75]
+02: 0x0x7ffe4d884992 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0xd2 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb1992/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0xd2) [0x7ffe4d884992]
+03: 0x0x7ffe4d883b8d at Datacratic::PassiveConnectionHandler::handleInput() + 0x2fd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb0b8d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x2fd) [0x7ffe4d883b8d]
+04: 0x0x7ffe4d873d76 at Datacratic::TransportBase::handleInput() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0d76/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0xe6) [0x7ffe4d873d76]
+05: 0x0x7ffe4d870bb7 at Datacratic::TransportBase::handleEvents() + 0x6c7 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9dbb7/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x6c7) [0x7ffe4d870bb7]
+06: 0x0x7ffe4d876ec4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa3ec4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7ffe4d876ec4]
+07: 0x0x7ffe4d877104 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xb4 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4104/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xb4) [0x7ffe4d877104]
+08: 0x0x7ffe4d897af3 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x303 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc4af3/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x303) [0x7ffe4d897af3]
+09: 0x0x7ffe4d877b0d at Datacratic::EndpointBase::runEventThread(int, int) + 0x3dd in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa4b0d/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3dd) [0x7ffe4d877b0d]
+10: 0x0x7ffe4b2262aa in /usr/local/lib/libboost_thread.so.1.57.0 + 0x112aa/usr/local/lib/libboost_thread.so.1.57.0(+0x112aa) [0x7ffe4b2262aa]
+11: 0x0x7ffe4e6bce9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7ffe4e6bce9a]
+12: 0x0x7ffe4ccf638d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7ffe4ccf638d]
+
+error: handler input had exception invalid content type 'application/x-www-form-urlencoded' for JSON
+token.type_ = 0
+error: parsing JSON payload: * Line 1, Column 1
+  Syntax error: value, object or array expected.
+

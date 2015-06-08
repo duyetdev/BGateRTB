@@ -1,0 +1,29 @@
+FD limit too low: 1024/4096 smaller than recommended 65535
+FD limit raised to: 4096
+2015-06-04 20:45:38.416 [1;32mZMQ [1;34mconnecting to monitor/zeromq[0m
+wexists handler returned -101
+2. returning result 
+opening file ./logs/data//2015-06-04/errors-2015-06-04-13:00:00.log with append 0
+  0 ./logs/data//%F/ -1
+  2  16
+  0 / -1
+  2  4
+  0 / -1
+  1  -1
+  0 -%T.log.gz -1
+  0 ./logs/data//%F/ -1
+  2  9
+  0 / -1
+  2  10
+  0 / -1
+  1  -1
+  0 -%T.log.gz -1
+2015-06-04 20:45:38.425 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources [0m
+2015-06-04 20:45:38.427 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources [0m
+2015-06-04 20:45:38.429 [1;32mZMQ [1;34mconnecting to monitor/zeromq[0m
+wexists handler returned -101
+2. returning result 
+2015-06-04 20:45:38.431 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedSocket::socket[0m
+2015-06-04 20:45:38.433 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:24000[0m
+wexists handler returned -101
+2. returning result 

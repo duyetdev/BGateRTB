@@ -1,0 +1,641 @@
+FD limit too low: 1024/4096 smaller than recommended 65535
+FD limit raised to: 4096
+bound tcp for http port 9987
+monitor is listening on tcp://*:24000,http://0.0.0.0:9987
+serviceClass/adServer/adserver --> {"serviceLocation":"mtl","serviceName":"adserver","servicePath":"adserver"}
+serviceClass/rtbAgentConfiguration/agentConfigurationService --> {"serviceLocation":"mtl","serviceName":"agentConfigurationService","servicePath":"agentConfigurationService"}
+serviceClass/monitor/monitor --> {"serviceLocation":"mtl","serviceName":"monitor","servicePath":"monitor"}
+monitor/http/tcp --> [{"httpUri":"http://127.0.0.1:9987","transports":[{"addr":"127.0.0.1","hostScope":"ubuntu-virtual-machine","name":"tcp","port":9987},{"name":"http","uri":"http://127.0.0.1:9987"}]},{"httpUri":"http://192.168.26.23:9987","transports":[{"addr":"192.168.26.23","hostScope":"*","name":"tcp","port":9987},{"name":"http","uri":"http://192.168.26.23:9987"}]}]
+monitor/zeromq/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ubuntu-virtual-machine","name":"tcp","port":24000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:24000"}],"zmqConnectUri":"tcp://127.0.0.1:24000"},{"transports":[{"addr":"192.168.26.23","hostScope":"*","name":"tcp","port":24000},{"name":"zeromq","socketType":6,"uri":"tcp://ubuntu-virtual-machine:24000"}],"zmqConnectUri":"tcp://ubuntu-virtual-machine:24000"}]
+adserver/logger/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ubuntu-virtual-machine","name":"tcp","port":25000},{"name":"zeromq","socketType":9,"uri":"tcp://127.0.0.1:25000"}],"zmqConnectUri":"tcp://127.0.0.1:25000"},{"transports":[{"addr":"192.168.26.23","hostScope":"*","name":"tcp","port":25000},{"name":"zeromq","socketType":9,"uri":"tcp://ubuntu-virtual-machine:25000"}],"zmqConnectUri":"tcp://ubuntu-virtual-machine:25000"}]
+2015-06-04 20:55:54.720 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedEndpoint::socket[0m
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:56:03  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:56:04  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:56:13  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:56:14  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:56:23  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:56:24  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:56:33  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:56:34  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:56:43  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:56:44  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:56:53  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:56:54  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:57:03  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:57:04  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:57:13  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:57:14  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:57:23  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:57:24  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:57:33  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:57:34  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:57:43  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:57:44  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:57:53  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:57:54  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:58:03  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:58:04  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:58:13  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:58:14  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:58:23  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:58:24  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:58:33  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:58:34  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:58:43  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:58:44  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:58:53  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:58:54  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:59:03  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:59:04  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:59:13  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:59:14  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:59:23  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:59:24  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:59:33  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:59:34  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:59:43  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:59:44  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 13:59:53  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 13:59:54  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:00:03  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:00:04  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:00:13  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:00:14  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:00:23  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:00:24  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:00:33  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:00:34  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:00:43  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:00:44  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:00:53  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:00:54  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:01:03  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:01:04  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:01:13  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:01:14  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:01:23  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:01:24  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:01:33  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:01:34  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:01:43  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:01:44  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:01:53  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:01:54  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:02:03  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:02:03  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:02:13  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:02:14  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:02:23  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:02:24  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:02:33  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:02:34  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:02:43  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:02:44  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:02:53  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:02:54  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:03:03  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:03:04  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:03:13  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:03:14  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:03:23  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:03:24  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:03:33  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:03:34  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:03:43  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:03:44  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:03:53  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:03:54  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:04:03  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:04:04  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:04:13  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:04:14  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:04:23  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:04:24  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:04:33  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:04:34  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:04:43  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:04:44  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:04:53  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:04:54  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:05:03  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:05:04  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:05:13  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:05:14  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:05:23  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:05:24  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:05:33  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:05:34  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:05:43  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:05:44  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:05:53  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:05:54  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:06:03  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:06:04  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:06:13  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:06:14  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:06:23  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:06:24  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:06:33  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:06:34  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:06:43  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:06:44  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:06:53  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:06:54  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:07:03  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:07:04  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:07:13  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:07:14  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:07:23  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:07:24  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2015-06-04 14:07:33  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2015-06-04 14:07:34  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 

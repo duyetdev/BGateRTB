@@ -1,0 +1,79 @@
+FD limit too low: 10240/10240 smaller than recommended 65535
+FD limit raised to: 10240
+file ./logs/data//2015-06-05/errors-2015-06-05-08:00:00.log exists; disambiguating
+file ./logs/data//2015-06-05/errors-2015-06-05-08:00:00.1.log exists; disambiguating
+opening file ./logs/data//2015-06-05/errors-2015-06-05-08:00:00.2.log with append 0
+  0 ./logs/data//%F/ -1
+  2  16
+  0 / -1
+  2  4
+  0 / -1
+  1  -1
+  0 -%T.log.gz -1
+  0 ./logs/data//%F/ -1
+  2  9
+  0 / -1
+  2  10
+  0 / -1
+  1  -1
+  0 -%T.log.gz -1
+2015-06-05 15:52:01.898 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources [0m
+2015-06-05 15:52:01.912 [1;32mZMQ [1;34mconnecting to monitor/zeromq[0m
+2015-06-05 15:52:01.912 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources [0m
+wexists handler returned -101
+2. returning result 
+2015-06-05 15:52:01.914 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedSocket::socket[0m
+wexists handler returned -101
+2. returning result 
+warning: could not connect to adserver/logger immediately
+2015-06-05 15:52:01.943 [1;32mZMQ [1;34mconnecting to monitor/zeromq[0m
+2015-06-05 15:52:01.945 [1;32mZMQ [1;34mconnecting to monitor/zeromq[0m
+2015-06-05 15:52:01.947 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:24000[0m
+2015-06-05 15:52:02.050 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources serviceClass/adServer/adserver[0m
+2015-06-05 15:52:02.051 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedSocket::socket[0m
+wexists handler returned -101
+2. returning result 
+warning: could not connect to PostAuctionLoop/logger immediately
+2015-06-05 15:52:02.072 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources serviceClass/adServer/adserver, serviceClass/rtbPostAuctionService/PostAuctionLoop[0m
+2015-06-05 15:52:02.072 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedSocket::socket[0m
+wexists handler returned -101
+2. returning result 
+warning: could not connect to router/logger immediately
+opening file ./logs/data//2015-06-05/errors-2015-06-05-09:00:00.log with append 0
+opening file ./logs/data//2015-06-05/errors-2015-06-05-10:00:00.log with append 0
+opening file ./logs/data//2015-06-05/errors-2015-06-05-11:00:00.log with append 0
+opening file ./logs/data//2015-06-05/errors-2015-06-05-12:00:00.log with append 0
+opening file ./logs/data//2015-06-05/errors-2015-06-05-13:00:00.log with append 0
+opening file ./logs/data//2015-06-05/errors-2015-06-05-14:00:00.log with append 0
+opening file ./logs/data//2015-06-05/errors-2015-06-05-15:00:00.log with append 0
+2015-06-05 22:26:20,716:2311(0x7faeafc3f700):ZOO_ERROR@handle_socket_error_msg@1723: Socket [127.0.0.1:2181] zk retcode=-4, errno=112(Host is down): failed while receiving a server response
+2015-06-05 22:26:20,716:2311(0x7faeafc3f700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-05 22:26:20,717:2311(0x7faeafc3f700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+2015-06-05 22:26:21,718:2311(0x7faeafc3f700):ZOO_ERROR@handle_socket_error_msg@1699: Socket [127.0.0.1:2181] zk retcode=-4, errno=111(Connection refused): server refused to accept the client
+
+--------------------------[Exception thrown]---------------------------
+time:   2015-06-05T15:26:21Z
+type:   ML::Exception
+pid:    2311; tid: 2372
+what:   can't connect; handle already exists
+stack:
+00: 0x0x7faebec26ecb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xecb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7faebec26ecb]
+01: 0x0x7faebe09844f at Datacratic::ZookeeperConnection::connectImpl(std::string const&, double, clientid_t*) + 0x40f in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x13944f/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic19ZookeeperConnection11connectImplERKSsdP10clientid_t+0x40f) [0x7faebe09844f]
+02: 0x0x7faebe098c46 at Datacratic::ZookeeperConnection::reconnect() + 0xe6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x139c46/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic19ZookeeperConnection9reconnectEv+0xe6) [0x7faebe098c46]
+03: 0x0x7faebe098ec0 at Datacratic::ZookeeperConnection::checkRes(int, int&, char const*, char const*) + 0x140 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x139ec0/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic19ZookeeperConnection8checkResEiRiPKcS3_+0x140) [0x7faebe098ec0]
+04: 0x0x7faebe099e61 at Datacratic::ZookeeperConnection::getChildren(std::string const&, bool, void (*)(int, int, std::string const&, void*), void*) + 0x1a1 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x13ae61/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic19ZookeeperConnection11getChildrenERKSsbPFviiS2_PvES3_+0x1a1) [0x7faebe099e61]
+05: 0x0x7faebe04610f at Datacratic::ZookeeperConfigurationService::getChildren(std::string const&, Datacratic::ConfigurationService::Watch) + 0x9f in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xe710f/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic29ZookeeperConfigurationService11getChildrenERKSsNS_20ConfigurationService5WatchE+0x9f) [0x7faebe04610f]
+06: 0x0x7faebe5ac4ce at Datacratic::ServiceProviderWatcher::handleServiceClassChange(std::string const&) + 0x12e in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libdata_logger.so + 0x1d4ce/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libdata_logger.so(_ZN10Datacratic22ServiceProviderWatcher24handleServiceClassChangeERKSs+0x12e) [0x7faebe5ac4ce]
+07: 0x0x7faebe5a3918 at Datacratic::TypedMessageSink<std::string>::processOne() + 0xb8 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libdata_logger.so + 0x14918/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libdata_logger.so(_ZN10Datacratic16TypedMessageSinkISsE10processOneEv+0xb8) [0x7faebe5a3918]
+08: 0x0x7faebe03893c at Datacratic::MessageLoop::processOne() + 0x13c in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xd993c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop10processOneEv+0x13c) [0x7faebe03893c]
+09: 0x0x7faebe03893c at Datacratic::MessageLoop::processOne() + 0x13c in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xd993c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop10processOneEv+0x13c) [0x7faebe03893c]
+10: 0x0x7faebe038d31 at Datacratic::MessageLoop::runWorkerThread() + 0xd1 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xd9d31/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop15runWorkerThreadEv+0xd1) [0x7faebe038d31]
+11: 0x0x7faebe039685 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xda685/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(+0xda685) [0x7faebe039685]
+12: 0x0x7faebdccbc78 in /usr/lib/x86_64-linux-gnu/libstdc++.so.6 + 0x6cc78/usr/lib/x86_64-linux-gnu/libstdc++.so.6(+0x6cc78) [0x7faebdccbc78]
+13: 0x0x7faebee30e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7faebee30e9a]
+14: 0x0x7faebd48238d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf338d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7faebd48238d]
+
+exception processing source ServiceProviderWatcher::changes
+exception processing source ZmqNamedMultipleSubscriber::serviceWatcher
+terminate called after throwing an instance of 'ML::Exception'
+  what():  can't connect; handle already exists

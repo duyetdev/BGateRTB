@@ -1,0 +1,7 @@
+FD limit too low: 1024/4096 smaller than recommended 65535
+FD limit raised to: 4096
+wexists handler returned -101
+2. returning result 
+listening on hostname 0.0.0.0 port 12340
+listening on hostname 0.0.0.0 port 12341
+2015-06-04 20:55:54.679 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedEndpoint::socket[0m

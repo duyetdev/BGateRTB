@@ -1,0 +1,19 @@
+FD limit at: 65535
+2015-06-05 23:43:31.677 [1;32mZMQ [1;34mconnecting to masterBanker/zeromq[0m
+wexists handler returned -101
+2. returning result 
+2015-06-05 23:43:31.677 [1;32mSlaveBankerArguments [1;34musing zmq interface for the MasterBanker[0m
+2015-06-05 23:43:31.679 [1;32mZMQ [1;34mconnecting to agentConfigurationService/agents[0m
+wexists handler returned -101
+2. returning result 
+2015-06-05 23:43:31.681 [1;32mZMQ Trace [1;34mconnecting to router / router[0m
+2015-06-05 23:43:31.681 [1;32mZMQ [1;34mconnecting to router/agents[0m
+wexists handler returned -101
+2. returning result 
+2015-06-05 23:43:31.683 [1;32mZMQ Trace [1;34mconnecting to PostAuctionLoop / PostAuctionLoop[0m
+2015-06-05 23:43:31.683 [1;32mZMQ [1;34mconnecting to PostAuctionLoop/agents[0m
+wexists handler returned -101
+2. returning result 
+2015-06-05 23:43:31.684 [1;32mZMQ Error [1;34mdropping message for agents[0m
+terminate called after throwing an instance of 'ML::Exception'
+  what():  connection to '' is unavailable

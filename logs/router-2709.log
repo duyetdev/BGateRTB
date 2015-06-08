@@ -1,0 +1,23 @@
+FD limit at: 65535
+2015-06-06 10:53:06.788 [1;32mZMQ [1;34mconnecting to monitor/zeromq[0m
+2015-06-06 10:53:06.790 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:24000[0m
+2015-06-06 10:53:06.792 [1;32mZMQ [1;34mconnecting to monitor/zeromq[0m
+2015-06-06 10:53:06.794 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:24000[0m
+2015-06-06 10:53:06.794 [1;32mSlaveBanker [1;34mSync Rate: 1[0m
+2015-06-06 10:53:06.794 [1;32mSlaveBanker [1;34mSpend Rate: {"USD/1M":100000}[0m
+2015-06-06 10:53:06.801 [1;32mZMQ [1;34mconnecting to masterBanker/zeromq[0m
+2015-06-06 10:53:06.803 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:22000[0m
+2015-06-06 10:53:06.803 [1;32mSlaveBankerArguments [1;34musing zmq interface for the MasterBanker[0m
+2015-06-06 10:53:06.820 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedEndpoint::socket[0m
+2015-06-06 10:53:06.820 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedEndpoint::socket[0m
+2015-06-06 10:53:06.821 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedEndpoint::socket[0m
+augmentor frequency-cap-ex has connected
+2015-06-06 10:53:06.822 [1;32mZMQ Trace [1;34mconnecting to PostAuctionLoop / PostAuctionLoop[0m
+2015-06-06 10:53:06.822 [1;32mZMQ [1;34mconnecting to PostAuctionLoop/events[0m
+agent fixed-price-agent-ex_2715 connected to router
+2015-06-06 10:53:06.824 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:20000[0m
+2015-06-06 10:53:06.825 [1;32mZMQ [1;34mconnecting to agentConfigurationService/listen[0m
+2015-06-06 10:53:06.828 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:19000[0m
+got configuration message fixed-price-agent-ex_2715
+listening on hostname 0.0.0.0 port 12339
+********* calling addSpendAccount for hello:world for SlaveBanker router.slaveBanker

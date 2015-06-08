@@ -1,0 +1,33 @@
+FD limit too low: 1024/4096 smaller than recommended 65535
+FD limit raised to: 4096
+2015-06-05 09:24:35.660 [1;32mZMQ [1;34mconnecting to monitor/zeromq[0m
+2015-06-05 09:24:35.667 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:24000[0m
+opening file ./logs/data//2015-06-05/errors-2015-06-05-02:00:00.log with append 0
+  0 ./logs/data//%F/ -1
+  2  16
+  0 / -1
+  2  4
+  0 / -1
+  1  -1
+  0 -%T.log.gz -1
+  0 ./logs/data//%F/ -1
+  2  9
+  0 / -1
+  2  10
+  0 / -1
+  1  -1
+  0 -%T.log.gz -1
+2015-06-05 09:24:35.672 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources [0m
+2015-06-05 09:24:35.677 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources [0m
+2015-06-05 09:24:35.681 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedSocket::socket[0m
+2015-06-05 09:24:35.686 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources serviceClass/adServer/adserver[0m
+2015-06-05 09:24:35.689 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedSocket::socket[0m
+wexists handler returned -101
+2. returning result 
+warning: could not connect to router/logger immediately
+2015-06-05 09:24:35.696 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources serviceClass/adServer/adserver, serviceClass/rtbRequestRouter/router[0m
+2015-06-05 09:24:35.696 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedSocket::socket[0m
+wexists handler returned -101
+2. returning result 
+warning: could not connect to PostAuctionLoop/logger immediately
+opening file ./logs/data//2015-06-05/errors-2015-06-05-03:00:00.log with append 0

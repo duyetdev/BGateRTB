@@ -1,0 +1,39 @@
+FD limit at: 65535
+2015-06-06 10:09:47.076 [1;32mZMQ [1;34mconnecting to monitor/zeromq[0m
+2015-06-06 10:09:47.076 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:24000[0m
+2015-06-06 10:09:47.077 [1;32mZMQ [1;34mconnecting to monitor/zeromq[0m
+2015-06-06 10:09:47.078 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:24000[0m
+2015-06-06 10:09:47.078 [1;32mSlaveBanker [1;34mSync Rate: 1[0m
+2015-06-06 10:09:47.078 [1;32mSlaveBanker [1;34mSpend Rate: {"USD/1M":100000}[0m
+2015-06-06 10:09:47.080 [1;32mZMQ [1;34mconnecting to masterBanker/zeromq[0m
+2015-06-06 10:09:47.080 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:22000[0m
+2015-06-06 10:09:47.080 [1;32mSlaveBankerArguments [1;34musing zmq interface for the MasterBanker[0m
+2015-06-06 10:09:47.104 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedEndpoint::socket[0m
+2015-06-06 10:09:47.105 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedEndpoint::socket[0m
+2015-06-06 10:09:47.105 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedEndpoint::socket[0m
+augmentor frequency-cap-ex has connected
+agent fixed-price-agent-ex_11245 connected to router
+2015-06-06 10:09:47.106 [1;32mZMQ Trace [1;34mconnecting to PostAuctionLoop / PostAuctionLoop[0m
+2015-06-06 10:09:47.107 [1;32mZMQ [1;34mconnecting to PostAuctionLoop/events[0m
+2015-06-06 10:09:47.108 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:20000[0m
+2015-06-06 10:09:47.109 [1;32mZMQ [1;34mconnecting to agentConfigurationService/listen[0m
+2015-06-06 10:09:47.111 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:19000[0m
+got configuration message fixed-price-agent-ex_11245
+listening on hostname 0.0.0.0 port 12339
+********* calling addSpendAccount for hello:world for SlaveBanker router.slaveBanker
+total of 1.00142e+07 microseconds and 202 sleeps
+CONFIG                                1         12   0.00%    12.00us/call
+HEARTBEAT                            10        278   0.00%    27.80us/call
+HELLO                                 1         94   0.00%    94.00us/call
+checkExpiredAuctions                202        355   0.00%     1.76us/call
+checks                              202          5   0.00%     0.02us/call
+configureAgentOnExchange            203          2   0.00%     0.01us/call
+doBid                               203        160   0.00%     0.79us/call
+doConfig                            203        512   0.01%     2.52us/call
+doStartBidding                      203          0   0.00%     0.00us/call
+doSubmitted                         203          2   0.00%     0.01us/call
+logBidEvents                         10        202   0.00%    20.20us/call
+sendPings                             9        801   0.01%    89.00us/call
+sleep                               202        533   0.01%     2.64us/call
+sleepPoll                           202   10006546  99.92% 49537.36us/call
+spinPoll                            203       4673   0.05%    23.02us/call

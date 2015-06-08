@@ -1,0 +1,29 @@
+FD limit too low: 10240/10240 smaller than recommended 65535
+FD limit raised to: 10240
+2015-06-05 14:07:04.473 [1;32mSlaveBankerArguments [1;34musing zmq interface for the MasterBanker[0m
+2015-06-05 14:07:04.477 [1;32mZMQ Error [1;34mdropping message for agents[0m
+2015-06-05 14:07:04.491 [1;32mZMQ [1;34mconnecting to agentConfigurationService/agents[0m
+wexists handler returned -101
+2. returning result 
+2015-06-05 14:07:04.495 [1;32mZMQ [1;34mconnecting to masterBanker/zeromq[0m
+wexists handler returned -101
+2. returning result 
+2015-06-05 14:07:04.505 [1;32mZMQ [1;34mconnecting to masterBanker/zeromq[0m
+2015-06-05 14:07:04.507 [1;32mZMQ [1;34mconnecting to masterBanker/zeromq[0m
+2015-06-05 14:07:04.510 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:22000[0m
+2015-06-05 14:07:04.512 [1;32mZMQ [1;34mconnecting to agentConfigurationService/agents[0m
+2015-06-05 14:07:04.514 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:15000[0m
+2015-06-05 14:07:04.517 [1;32mZMQ Trace [1;34mconnecting to PostAuctionLoop / PostAuctionLoop[0m
+2015-06-05 14:07:04.517 [1;32mZMQ [1;34mconnecting to PostAuctionLoop/agents[0m
+wexists handler returned -101
+2. returning result 
+2015-06-05 14:07:04.524 [1;32mZMQ Trace [1;34mconnecting to router / router[0m
+2015-06-05 14:07:04.524 [1;32mZMQ [1;34mconnecting to router/agents[0m
+wexists handler returned -101
+2. returning result 
+2015-06-05 14:07:04.562 [1;32mZMQ [1;34mconnecting to PostAuctionLoop/agents[0m
+2015-06-05 14:07:04.564 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:21000[0m
+BiddingAgent is connected to post auction service PostAuctionLoop
+2015-06-05 14:07:04.570 [1;32mZMQ [1;34mconnecting to router/agents[0m
+2015-06-05 14:07:04.571 [1;32mZMQ [1;34mconnected to tcp://127.0.0.1:17000[0m
+BiddingAgent is connected to router router
