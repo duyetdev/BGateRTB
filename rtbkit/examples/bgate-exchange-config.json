@@ -1,0 +1,19 @@
+{
+    "workers": [
+        {
+            "threads": 1,
+            "bids": {
+                "type": "bgate",
+                "url": "localhost:12339"
+            },
+            "wins": {
+                "type": "bgate",
+                "url": "localhost:12340"
+            },
+            "events": {
+                "type": "bgate",
+                "url": "localhost:12341"
+            }
+        }
+    ]
+}
