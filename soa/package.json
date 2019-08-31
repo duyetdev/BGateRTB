@@ -6,7 +6,7 @@
     "dependencies" : 
     {
         "vows":             "0.6.1",
-        "coffee-script":    "1.2.0"
+        "coffee-script":    "1.12.7"
     }
 
 }
