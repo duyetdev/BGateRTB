@@ -5,7 +5,7 @@
     "description": "A real-time bidder framework", 
     "dependencies" : 
     {
-        "vows":             "0.6.1",
+        "vows":             "0.8.3",
         "coffee-script":    "1.2.0"
     }
 
